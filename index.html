@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website logo  -->
+    <link rel="logo" href="images/shafiiq-logo.png">
     <!-- custom css link  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- css helper link  -->
@@ -15,91 +17,620 @@
 </head>
 
 <body>
-    <!-- intro home section starts  -->
-    <header>
-        <div class="header size-full flex j-between a-center p-inline-6 white-clr">
+    <!-- animated header  -->
+    <!-- <header class="animated-header z-100">
+        <div class="anim-header size-full flex j-between a-center p-inline-6 white-clr">
             <div class="logo flex gap-1 a-center">
                 <img src="images/shafiiq-logo.png">
-                <p class="font-sm bold white-clr">
+                <p class="font-sm bold-600-500 white-clr">
                     shafiiq688@gmail.com
                 </p>
             </div>
             <div class="navigations">
-                <ul class="flex gap-2 a-center bold font-sm">
-                    <li>
-                        Services
+                <ul class="flex gap-2 a-center font-sm">
+                    <li class="navs-li relative pointer">
+                        <a href="#home" class="white-clr">
+                            Home
+                        </a>
                     </li>
-                    <li>
-                        Works
+                    <li class="navs-li relative pointer">
+                        <a href="#service" class="white-clr">
+                            Services
+                        </a>
                     </li>
-                    <li>
-                        Resume
+                    <li class="navs-li relative pointer">
+                        <a href="#recent-works" class="white-clr">
+                            Works
+                        </a>
                     </li>
-                    <li>
-                        Skills
+                    <li class="navs-li relative pointer">
+                        <a href="#resume" class="white-clr">
+                            Resume
+                        </a>
                     </li>
-                    <li>
-                        Testimonials
+                    <li class="navs-li relative pointer">
+                        <a href="#skills" class="white-clr">
+                            Skills
+                        </a>
                     </li>
-                    <li>
-                        Contact
+                    <li class="navs-li relative pointer">
+                        <a href="#testimonials" class="white-clr">
+                            Testimonials
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#contact" class="white-clr">
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>
-            <button class="animated-button">
-                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-                    </path>
-                </svg>
-                <span class="text">Hire me</span>
-                <span class="circle"></span>
-                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-                    </path>
-                </svg>
-            </button>
+            <div class="pointer">
+                <button class="btn pointer">
+                    <i class="animation pointer"></i>
+                    <span class="pointer">Hire Me</span>
+                    <i class="animation pointer"></i>
+                </button>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- <div class="home-text-anim absolute top size-vh-vw flex j-center a-center">
+        <h1 class="mt-7">HIM</h1>
+    </div> -->
+
+    <!-- intro home section starts  -->
+
+    <!-- header section starts  -->
+    <header id="header">
+        <div class="header size-full flex j-between a-center p-inline-6 white-clr">
+            <div class="logo flex gap-1 a-center">
+                <img src="images/shafiiq-logo.png">
+                <p class="font-sm bold-600-500 white-clr">
+                    shafiiq688@gmail.com
+                </p>
+            </div>
+            <div class="navigations">
+                <ul class="flex gap-2 a-center font-sm">
+                    <li class="navs-li relative pointer">
+                        <a href="#home" class="white-clr">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#service" class="white-clr">
+                            Services
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#recent-works" class="white-clr">
+                            Works
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#resume" class="white-clr">
+                            Resume
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#skills" class="white-clr">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#testimonials" class="white-clr">
+                            Testimonials
+                        </a>
+                    </li>
+                    <li class="navs-li relative pointer">
+                        <a href="#contact" class="white-clr">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pointer z-50">
+                <button class="btn pointer">
+                    <i class="animation pointer"></i>
+                    <span class="pointer">Hire Me</span>
+                    <i class="animation pointer"></i>
+                </button>
+            </div>
         </div>
     </header>
-    <section class="home">
-        <div class="container p-inline-6 size-full">
-            <div class="home-wrapper w-full">
-                <div class="home-left flex flex-col gap-1 size-full flex j-center white-clr">
-                    <p class="name bold">
+    <!-- header section ends  -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="container relative p-inline-6 size-full relative" style="z-index: 3;">
+            <div class="home-wrapper w-full flex">
+                <div class="home-left flex flex-col gap-1 h-full w-half flex j-center white-clr">
+                    <p class="name bold-600">
                         I am Muhammed Shafeek
                     </p>
-                    <p class="role-of-me bold">
+                    <p class="role-of-me bold-600">
                         Full Stack Web <br>
                         Devoloper
                     </p>
                     <p class="decription font-md">
                         I break down complex user experinece problems to <br>
-                         create integritiy focussed solutions that <br>
-                         connect billions of people
-    
+                        create integritiy focussed solutions that <br>
+                        connect billions of people
+
                     </p>
-                    <div class="proffesional-profiles mt-2">
-                        <button class="download-resume font-sm r-vh p-inline-1 white-clr glass">
-                            Download Resume
+                    <div class="proffesional-profiles mt-2 flex gap-2 a-center">
+                        <button class="download-resume pointer r-vh glass ease-4">
+                            <a id="download-resume" href="files/resume.pdf" download="resume.pdf"
+                                class="size-full flex a-center font-sm r-vh j-center white-clr glass">
+                                Download Resume
+                                <span class="material-symbols-rounded">
+                                    download
+                                </span>
+                            </a>
                         </button>
-                        <div class="social">
-                            <div class="linked-in">
-    
+                        <div class="social flex gap-2 a-center">
+                            <div class="linked-in r-50 pointer glass glass">
+                                <a href="" class="size-full white-clr flex a-center j-center">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
                             </div>
-                            <div class="github">
-    
+                            <div class="github r-50 glass pointer glass">
+                                <a href="https://github.com/shafiiiq"
+                                    class="size-full white-clr flex a-center j-center">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="home-right w-half">
-    
+                <div class="home-right w-half flex j-center a-center w-half h-full">
+                    <div class="img-wrapper">
+                        <img src="images/image.jpg" alt="" class="size-full cover">
+                    </div>
+                </div>
+            </div>
+            <div class="home-summary w-full white-clr flex a-end">
+                <div class="details grid c-repeat-4 gap-3 p-center w-full">
+                    <div class="item flex gap-2 a-center j-center">
+                        <h1>
+                            13
+                        </h1>
+                        <span>Year of <br>
+                            Experience</span>
+                    </div>
+                    <div class="item flex gap-2 a-center j-center">
+                        <h1>
+                            50
+                        </h1>
+                        <span>Project <br>
+                            Completed</span>
+                    </div>
+                    <div class="item flex gap-2 a-center j-center">
+                        <h1>
+                            34k
+                        </h1>
+                        <span>Happy <br>
+                            Clients</span>
+                    </div>
+                    <div class="item flex gap-2 a-center j-center">
+                        <h1>
+                            50
+                        </h1>
+                        <span>Project <br>
+                            Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section ends  -->
+
+    <!-- service section starts  -->
+    <section class="services" id="service">
+        <div class="container p-inline-6 pt-9 white-clr pb-7 flex flex-col gap-3 size-full">
+            <div class="services-head w-full flex flex-col a-center">
+                <h1 class="bold-600 service-h1">
+                    My Quality Services
+                </h1>
+                <p class="t-center font-sm service-p">
+                    We put your ideas and thus your wishes in the form of a unique web project that <br> inspires you
+                    and you customers.
+                </p>
+            </div>
+            <div class="services-body flex flex-col w-full relative">
+                <div class="focuser absolute w-full">
+
+                </div>
+                <!-- item 1  -->
+                <div class="item z-50 white-clr flex j-between w-full a-center p-inline-2" id="hover-1">
+                    <div class="sl-name flex a-center gap-1">
+                        <span class="sl bold-600">01</span>
+                        <span class="name bold-600">
+                            Branding Desing
+                        </span>
+                    </div>
+                    <div class="service-description">
+                        <p class="font-sm">
+                            I break down complex user experinece problems to create <br>
+                            integritiy focussed solutions that connect billions of people
+                        </p>
+                    </div>
+                    <div class="link">
+                        <span class="material-symbols-rounded">
+                            south_east
+                        </span>
+                    </div>
+                </div>
+                <!-- item 2  -->
+                <div class="item z-50 flex j-between w-full a-center p-inline-2" id="hover-2">
+                    <div class="sl-name flex a-center gap-1">
+                        <span class="sl bold-600">01</span>
+                        <span class="name bold-600">
+                            Branding Desing
+                        </span>
+                    </div>
+                    <div class="service-description">
+                        <p class="font-sm">
+                            I break down complex user experinece problems to create <br>
+                            integritiy focussed solutions that connect billions of people
+                        </p>
+                    </div>
+                    <div class="link">
+                        <span class="material-symbols-rounded">
+                            south_east
+                        </span>
+                    </div>
+                </div>
+                <!-- item 3  -->
+                <div class="item z-50 flex j-between w-full a-center p-inline-2" id="hover-3">
+                    <div class="sl-name flex a-center gap-1">
+                        <span class="sl bold-600">01</span>
+                        <span class="name bold-600">
+                            Branding Desing
+                        </span>
+                    </div>
+                    <div class="service-description">
+                        <p class="font-sm">
+                            I break down complex user experinece problems to create <br>
+                            integritiy focussed solutions that connect billions of people
+                        </p>
+                    </div>
+                    <div class="link">
+                        <span class="material-symbols-rounded">
+                            south_east
+                        </span>
+                    </div>
+                </div>
+                <!-- item 4  -->
+                <div class="item flex j-between z-50 w-full a-center p-inline-2" id="hover-4">
+                    <div class="sl-name flex a-center gap-1">
+                        <span class="sl bold-600">01</span>
+                        <span class="name bold-600">
+                            Branding Desing
+                        </span>
+                    </div>
+                    <div class="service-description">
+                        <p class="font-sm">
+                            I break down complex user experinece problems to create <br>
+                            integritiy focussed solutions that connect billions of people
+                        </p>
+                    </div>
+                    <div class="link">
+                        <span class="material-symbols-rounded">
+                            south_east
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends  -->
+
+    <!-- recent works section starts  -->
+    <section class="recent-works" id="recent-works">
+        <div class="container p-inline-6 flex flex-col gap-2 white-clr">
+            <!-- recent works head  -->
+            <div class="recent-head flex flex-col gap-1 w-full a-center">
+                <h1 class="h1 bold-600-600">
+                    My Recent Works
+                </h1>
+                <p class="t-center font-sm">
+                    We put your ideas and thus your wishes in the form of a unique web project that <br> inspires you
+                    and you customers.
+                </p>
+                <div class="recent-navs mt-2 r-vh">
+                    <ul class="size-full flex r-vh relative">
+                        <div class="recent-focuser absolute left h-full r-vh"></div>
+                        <li class="flex a-center j-center r-vh font-sm recent-active pointer z-50" id="all">
+                            All
+                        </li>
+                        <li class="flex a-center j-center r-vh font-sm pointer z-50" id="ux-ui">
+                            UX/UI
+                        </li>
+                        <li class="flex a-center j-center r-vh font-sm pointer z-50" id="branding">
+                            Branding
+                        </li>
+                        <li class="flex a-center j-center r-vh font-sm pointer z-50" id="apps">
+                            Apps
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- recent works body  -->
+            <div class="recent-body w-full mt-2">
+                <!-- recent all  -->
+                <div class="all grid r-repeat-2 c-repeat-2 gap-3 size-full p-center">
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                </div>
+                <!-- recent UI and UX  -->
+                <div class="ux-ui grid r-repeat-2 c-repeat-2 gap-3 size-full p-center" style="display: none;">
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                </div>
+                <!-- recent branding  -->
+                <div class="branding grid r-repeat-2 c-repeat-2 gap-3 size-full p-center" style="display: none;">
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                </div>
+                <!-- recent apps  -->
+                <div class="apps grid r-repeat-2 c-repeat-2 gap-3 size-full p-center" style="display: none;">
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                            <div class="known flex flex-col h-full j-center">
+                                <span class="name font-xl bold-600">Homecraft</span>
+                                <span class="decription font-sm">
+                                    Project was succesfully completed
+                                </span>
+                            </div>
+                            <span class="material-symbols-rounded">
+                                north_east
+                            </span>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
+                            class="cover r-10 size-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- recent works ends  -->
+
+    <!-- resume section starts  -->
+    <section class="resume" id="resume">
+        <div class="contaienr p-inline-6 pt-10 pb-2 flex size-full">
+            <!-- experience  -->
+            <div class="experience h-full w-half flex flex-col gap-3 p-inline-2 a-center">
+                <div class="experience-head flex gap-1 a-center j-start">
+                    <span class="material-symbols-rounded">
+                        award_star
+                    </span>
+                    <h1 class="h1">My Experience</h1>
+                </div>
+                <div class="experience-lists w-full">
+                    <ul class="w-full flex flex-col gap-2">
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- education  -->
+            <div class="experience h-full w-half flex flex-col gap-3 p-inline-2 a-center">
+                <div class="experience-head flex gap-1 a-center j-start">
+                    <span class="material-symbols-rounded">
+                        school
+                        </span>
+                    <h1 class="h1">My Education</h1>
+                </div>
+                <div class="experience-lists w-full">
+                    <ul class="w-full flex flex-col gap-2">
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                        <li class="flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                            <span class="bold-500 year">
+                                2023 - Present
+                            </span>
+                            <span class="bold-600 role">Lead Devoloper</span>
+                            <span class="place font-sm">
+                                Blockdots, London
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <script src="js/script.js"></script>
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/f83293ade7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

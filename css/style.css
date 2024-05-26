@@ -1,152 +1,701 @@
-/* common styles  */
-section {
-    height: 100vh;
+.h1 {
+  background: linear-gradient(to right, #8750f7 0%, var(--white-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  line-height: 5.5rem;
 }
 
-header {
-    height: 10rem;
+body {
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+  scroll-behavior: smooth;
+  background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--track);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumb);
+  border-radius: 100vh;
+}
+
+section.home .container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  margin-left: -5%;
+  margin-bottom: -5%;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 322px;
+  height: 308px;
+  border-radius: 50%;
+  background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  margin-right: -5%;
+  margin-top: -5%;
 }
 
 
 /* header section starts  */
+
+/* animated hero header */
+header.animated-header {
+  background-color: var(--black-color);
+  height: 0;
+  box-shadow: 0 1px 100px #8850f743;
+  position: fixed;
+  width: 209.6vh;
+  overflow: hidden;
+}
+
+/* animated header animation  */
+.headerIn {
+  animation:  headerIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes headerIn {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 6.5rem;
+  }
+}
+
+.headerOut {
+  animation:  headerOut 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes headerOut {
+  0% {
+    height: 6.5rem;
+  }
+  
+  100% {
+    height: 0;
+  }
+}
+
+/* real header  */
+header#header {
+  height: 11.5rem;
+}
+
 header .header {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .logo img {
-    width: 10rem;
+  width: 10rem;
 }
 
-section.home {
-    background-color: var(--primary-color);
+.navs-li {
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
 }
+
+.navs-li:first-child::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  height: 2px;
+  border-radius: 100vh;
+}
+
+.navs-li::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  height: 2px;
+  border-radius: 100vh;
+}
+
+.navs-li:not(:first-child):hover::after {
+  animation: expand 0.4s forwards;
+}
+
+.navs-li::after {
+  transition: none;
+  /* Ensures no transition interference */
+}
+
+.navs-li:not(:first-child):not(:hover)::after {
+  animation: contract 0.4s ease;
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+
+  to {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+@keyframes contract {
+  from {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+
+  to {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
 
 /* custom button  */
-.animated-button {
-    width: 220px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding: 16px 36px;
-    border: 4px solid transparent;
-    font-size: 16px;
-    background-color: inherit;
-    border-radius: 100px;
-    font-weight: 600;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  min-width: 200px;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
   }
 
-  .animated-button::before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    background: linear-gradient(to right, #8750f7 0%, #160439 100%);
-    z-index: 1;
-    border-radius: inherit;
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
   }
-
-/* -------------------------------------------------------------------------------- */
-
-.animated-button svg {
-    position: absolute;
-    width: 24px;
-    fill: var(--secondary-color);
-    z-index: 9;
-    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .arr-1 {
-    right: 16px;
-}
-
-.animated-button .arr-2 {
-    left: -25%;
-}
-
-.animated-button .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(to right, #8750f7 0%, #160439 100%);
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .text {
-    position: relative;
-    z-index: 1;
-    transform: translateX(-12px);
-    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-    color: var(--white-color);
-}
-
-.animated-button:hover {
-    box-shadow: 0 0 0 12px transparent;
-    color: var(--white-color);
-    border-radius: 12px;
-}
-
-.animated-button:hover .arr-1 {
-    right: -25%;
-}
-
-.animated-button:hover .arr-2 {
-    left: 16px;
-}
-
-.animated-button:hover .text {
-    transform: translateX(12px);
-}
-
-.animated-button:hover svg {
-    fill: var(--white-color);
-}
-
-.animated-button:active {
-    scale: 0.95;
-    box-shadow: 0 0 0 4px rgb(119, 0, 255);
-}
-
-
-.animated-button:hover .circle {
-    width: 220px;
-    height: 220px;
-    opacity: 1;
 }
 
 /* header ends  */
 
 /* home section starts */
+section.home {
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
 .home-wrapper {
-    height: 80%;
+  height: 80%;
 }
 
 .name {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .role-of-me {
-    font-size: 80px;
-    background: linear-gradient(to right, #8750f7 0%, var(--white-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    line-height: 5.5rem;
+  font-size: 80px;
+  background: linear-gradient(to right, #8750f7 0%, var(--white-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  line-height: 5.5rem;
 }
 
 .download-resume {
-    border: 1px solid #9000ff;
-    height: 4rem;
-    width: 15rem;
+  border: 1px solid #9000ff;
+  height: 4rem;
+  width: 15rem;
+}
+
+.home-right .img-wrapper {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 30px;
+  transform: rotate(5deg);
+  border: 1px solid #2a1454;
+  transition: all 0.5s ease;
+  padding: 0.3rem;
+}
+
+.home-right .img-wrapper:hover {
+  transform: rotate(0);
+  border: 1px solid var(--secondary-color);
+}
+
+.home-right .img-wrapper img {
+  border-radius: 30px;
+}
+
+.home-text-anim h1 {
+  margin-left: 14rem;
+  font-size: 20rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #2a1454;
+  /* For Webkit browsers (Chrome, Safari) */
+  text-stroke: 2px #2a1454;
+  /* For other browsers */
+  animation: 3s pulsrate infinite alternate ease-in-out;
+}
+
+@keyframes pulsrate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.download-resume:hover {
+  background-color: var(--secondary-color);
+}
+
+.proffesional-profiles .social>div {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.home-summary {
+  height: 20%;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.home-summary .details .item>h1 {
+  font-size: 76px;
+}
+
+.home-summary .details .item>span {
+  font-size: 20px;
+}
+
+/* home section ends  */
+
+
+/* services section starts  */
+section.services {
+  /* background-color: var(--black-color); */
+  background: linear-gradient(180deg, #0f0715 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
+}
+
+.services .services-head>h1 {
+  font-size: 54px;
+  background: linear-gradient(to right, #8750f7 0%, var(--white-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  line-height: 5.5rem;
+}
+
+.services .service-h1 {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.service-h1-animUp {
+  animation: serviceHeadingUp 0.8s ease forwards;
+}
+
+@keyframes serviceHeadingUp {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.service-h1-animDown {
+  animation: serviceHeadingDown 0.8s ease forwards;
+}
+
+@keyframes serviceHeadingDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+/* servie p animation  */
+.services .service-p {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.service-p-animUp {
+  animation: serviceHeadingUp 0.8s ease forwards;
+}
+
+@keyframes servicePUp {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.service-p-animDown {
+  animation: servicePDown 0.8s ease forwards;
+}
+
+@keyframes servicePDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+/* service body items animation  */
+
+/* servie item 1 animation  */
+.services .item:nth-child(2) {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.animUp1 {
+  animation: animUp1 1s ease forwards;
+}
+
+@keyframes animUp1 {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animDown1 {
+  animation: animDown1 1s ease forwards;
+}
+
+@keyframes animDown1 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+/* end of first item anim  */
+
+/* Animation for service item 2 */
+.services .item:nth-child(3) {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.animUp2 {
+  animation: animUp2 1s ease forwards;
+}
+
+@keyframes animUp2 {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animDown2 {
+  animation: animDown2 1s ease forwards;
+}
+
+@keyframes animDown2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+/* Animation for service item 3 */
+.services .item:nth-child(4) {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.animUp3 {
+  animation: animUp3 1s ease forwards;
+}
+
+@keyframes animUp3 {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animDown3 {
+  animation: animDown3 1s ease forwards;
+}
+
+@keyframes animDown3 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+/* Animation for service item 4 */
+.services .item:nth-child(5) {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.animUp4 {
+  animation: animUp4 1s ease forwards;
+}
+
+@keyframes animUp4 {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animDown4 {
+  animation: animDown4 1s ease forwards;
+}
+
+@keyframes animDown4 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+
+.services .services-body .item {
+  height: 8rem;
+  border-bottom: 1px solid #2a1454;
+  cursor: pointer;
+}
+
+.services .services-body .item .sl {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.services .services-body .link span {
+  font-size: 50px;
+  color: var(--secondary-color);
+}
+
+.focuser {
+  top: 0;
+  height: 8rem;
+  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  transition: transform 0.5s ease;
+}
+
+/* servive section ends  */
+
+/* recent works section starts  */
+section.recent-works {
+  height: 200vh;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(15,7,21,1) 34%, rgba(15,7,21,1) 100%);
+}
+
+.recent-works .recent-head h1 {
+  font-size: 54px;
+}
+
+.recent-head .recent-navs {
+  height: 4rem;
+  width: 28rem;
+  background-color: rgb(13, 13, 14);
+}
+
+.recent-head .recent-navs li {
+  width: 25%;
+}
+
+.recent-focuser {
+  width: 25%;
+  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.recent-body .item {
+  background-color: #140c1c;
+  height: 0;
+  width: 0;
+}
+
+.recent-anim {
+  animation: recentAnim 0.5s cubic-bezier(0.173, 0.825, 0.32, 1.03) forwards;
+}
+
+@keyframes recentAnim {
+  0% {
+    height: 0;
+    width: 0;
+  }
+
+  100% {
+    height: 40rem;
+    width: 100%;
+  }
+}
+
+.recent-body .item .work-details {
+  height: 10rem;
+  width: 90%;
+  bottom: -2rem;
+  opacity: 0;
+  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  transition: bottom 0.4s cubic-bezier(0.13, 0.25, 0.32, 1.03);
+}
+
+.recent-body .item .work-details > span {
+  font-size: 60px;
+}
+
+.recent-body .item:hover .work-details {
+  bottom: 2rem;
+  opacity: 1;
+}
+
+/* recent works section ends  */
+
+/* resume section starts  */
+section.resume {
+  height: 150vh;
+  background: linear-gradient(180deg, #0f0715 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
+}
+
+.experience-head > h1 {
+  font-size: 54px;
+}
+
+.experience-head > span {
+  font-size: 54px;
+  color: var(--secondary-color);
+}
+
+.experience-lists ul li {
+  height: 10rem;
+  background: linear-gradient(to right, #140c1c 0%, #08040c 100%);;
+}
+
+.experience-lists ul li:hover {
+  background: linear-gradient(to right, var(--secondary-color) 0%, #1b0f27 100%);;
+}
+
+.experience-lists ul li .year {
+  font-size: 30px;
+}
+
+.experience-lists ul li .role {
+  font-size: 36px;
 }
