@@ -20,7 +20,16 @@ document.getElementById('hover-4').addEventListener('mouseenter', function () {
 window.addEventListener('scroll', function () {
     var scrollY = window.scrollY || window.pageYOffset;
 
-    // console.log(scrollY);
+    console.log(scrollY);
+
+    // custom circle scrollbat animation 
+    if (scrollY >= 910) {
+        document.querySelector('.circle-wrapper').classList.add('circle-bar-anim-comes');
+        document.querySelector('.circle-wrapper').classList.remove('circle-bar-anim-goes');
+    } else {
+        document.querySelector('.circle-wrapper').classList.remove('circle-bar-anim-comes');
+        document.querySelector('.circle-wrapper').classList.add('circle-bar-anim-goes');
+    }
 
     // animated header animation 
     if (scrollY >= 910) {
@@ -105,14 +114,14 @@ window.addEventListener('scroll', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var recentFocuser = document.querySelector('.recent-focuser');
     var all = document.querySelector('.all');
     var uiUx = document.querySelector('.ux-ui');
     var branding = document.querySelector('.branding');
     var apps = document.querySelector('.apps');
-    
-    document.getElementById('all').addEventListener('click', function() {
+
+    document.getElementById('all').addEventListener('click', function () {
         recentFocuser.style.transform = "translateX(0)";
         uiUx.style.display = "none";
         branding.style.display = "none";
@@ -120,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         all.style.display = "grid";
     });
 
-    document.getElementById('ux-ui').addEventListener('click', function() {
+    document.getElementById('ux-ui').addEventListener('click', function () {
         recentFocuser.style.transform = "translateX(7rem)";
         all.style.display = "none";
         branding.style.display = "none";
@@ -128,12 +137,12 @@ document.addEventListener('DOMContentLoaded', function() {
         uiUx.style.display = "grid";
 
         var items = document.querySelectorAll('.ux-ui .item');
-        items.forEach(function(item) {
+        items.forEach(function (item) {
             item.classList.add('recent-anim');
         });
     });
 
-    document.getElementById('branding').addEventListener('click', function() {
+    document.getElementById('branding').addEventListener('click', function () {
         recentFocuser.style.transform = "translateX(14rem)";
         all.style.display = "none";
         uiUx.style.display = "none";
@@ -141,12 +150,12 @@ document.addEventListener('DOMContentLoaded', function() {
         branding.style.display = "grid";
 
         var items = document.querySelectorAll('.branding .item');
-        items.forEach(function(item) {
+        items.forEach(function (item) {
             item.classList.add('recent-anim');
         });
     });
 
-    document.getElementById('apps').addEventListener('click', function() {
+    document.getElementById('apps').addEventListener('click', function () {
         recentFocuser.style.transform = "translateX(21rem)";
         all.style.display = "none";
         uiUx.style.display = "none";
@@ -154,8 +163,19 @@ document.addEventListener('DOMContentLoaded', function() {
         apps.style.display = "grid";
 
         var items = document.querySelectorAll('.apps .item');
-        items.forEach(function(item) {
+        items.forEach(function (item) {
             item.classList.add('recent-anim');
         });
     });
+});
+
+
+// custom circle scroll bar 
+document.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / docHeight;
+    const strokeDashoffsetValue = 219.9 - (219.9 * scrollFraction);
+
+    document.querySelector('.path').style.strokeDashoffset = strokeDashoffsetValue;
 });
