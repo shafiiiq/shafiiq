@@ -863,7 +863,7 @@ section.services {
 
 /* recent works section starts  */
 section.recent-works {
-  height: 230vh;
+  height: 210vh;
   background: var(--section-gradiant-1);
 }
 
@@ -950,7 +950,7 @@ section.recent-works {
 
 /* resume section starts  */
 section.resume {
-  height: 150vh;
+  height: 140vh;
   background: linear-gradient(180deg, #0f0715 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
 }
 
