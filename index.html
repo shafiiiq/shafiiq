@@ -46,33 +46,39 @@
             </div>
             <div class="navigations">
                 <ul class="flex gap-2 a-center font-sm">
-                    <li class="navs-li relative pointer">
-                        <a href="#home" class="white-clr">
+                    <li class="navs-li relative pointer moveDown nav-home">
+                        <div class="home-focuser nav-active" style="display: none;"></div>
+                        <a href="#home" class="white-clr bold-500">
                             Home
                         </a>
                     </li>
-                    <li class="navs-li relative pointer">
-                        <a href="#service" class="white-clr">
+                    <li class="navs-li relative pointer moveUp nav-service">
+                        <div class="service-focuser nav-active" style="display: none;"></div>
+                        <a href="#service" class="white-clr bold-500">
                             Services
                         </a>
                     </li>
-                    <li class="navs-li relative pointer">
-                        <a href="#recent-works" class="white-clr">
+                    <li class="navs-li relative pointer moveDown nav-works">
+                        <div class="works-focuser nav-active" style="display: none;"></div>
+                        <a href="#recent-works" class="white-clr bold-500">
                             Works
                         </a>
                     </li>
-                    <li class="navs-li relative pointer">
-                        <a href="#resume" class="white-clr">
+                    <li class="navs-li relative pointer moveUp nav-resume">
+                        <div class="resume-focuser nav-active" style="display: none;"></div>
+                        <a href="#resume" class="white-clr bold-500">
                             Resume
                         </a>
                     </li>
-                    <li class="navs-li relative pointer">
-                        <a href="#skills" class="white-clr">
+                    <li class="navs-li relative pointer moveDown nav-skills">
+                        <div class="skills-focuser nav-active" style="display: none;"></div>
+                        <a href="#skills" class="white-clr bold-500">
                             Skills
                         </a>
                     </li>
-                    <li class="navs-li relative pointer">
-                        <a href="#contact" class="white-clr">
+                    <li class="navs-li relative pointer moveUp nav-contact">
+                        <div class="contact-focuser nav-active" style="display: none;"></div>
+                        <a href="#contact" class="white-clr bold-500">
                             Contact
                         </a>
                     </li>
@@ -93,7 +99,7 @@
 
     <!-- pulsing h1 in main section   -->
     <div class="home-text-anim absolute top size-vh-vw flex j-center a-center">
-        <h1 class="mt-7">IIQ</h1>
+        <h1 class="mt-7">IQ</h1>
     </div>
 
     <!-----------------------------------------------------------------------------------------------------------------------------------------  -->
@@ -108,32 +114,38 @@
             </div>
             <div class="navigations">
                 <ul class="flex gap-2 a-center font-sm">
-                    <li class="navs-li relative pointer moveDown">
+                    <li class="navs-li relative pointer moveDown nav-home">
+                        <div class="home-focuser nav-active"></div>
                         <a href="#home" class="white-clr bold-500">
                             Home
                         </a>
                     </li>
-                    <li class="navs-li relative pointer moveUp">
+                    <li class="navs-li relative pointer moveUp nav-service">
+                        <div class="service-focuser nav-active" style="display: none;"></div>
                         <a href="#service" class="white-clr bold-500">
                             Services
                         </a>
                     </li>
-                    <li class="navs-li relative pointer moveDown">
+                    <li class="navs-li relative pointer moveDown nav-works">
+                        <div class="works-focuser nav-active" style="display: none;"></div>
                         <a href="#recent-works" class="white-clr bold-500">
                             Works
                         </a>
                     </li>
-                    <li class="navs-li relative pointer moveUp">
+                    <li class="navs-li relative pointer moveUp nav-resume">
+                        <div class="resume-focuser nav-active" style="display: none;"></div>
                         <a href="#resume" class="white-clr bold-500">
                             Resume
                         </a>
                     </li>
-                    <li class="navs-li relative pointer moveDown">
+                    <li class="navs-li relative pointer moveDown nav-skills">
+                        <div class="skills-focuser nav-active" style="display: none;"></div>
                         <a href="#skills" class="white-clr bold-500">
                             Skills
                         </a>
                     </li>
-                    <li class="navs-li relative pointer moveUp">
+                    <li class="navs-li relative pointer moveUp nav-contact">
+                        <div class="contact-focuser nav-active" style="display: none;"></div>
                         <a href="#contact" class="white-clr bold-500">
                             Contact
                         </a>
@@ -183,15 +195,20 @@
                         </button>
                         <div class="social flex gap-1 a-center moveUp">
                             <div class="linked-in r-50 pointer glass relative">
-                                <a href="www.linkedin.com/in/muhammed-shafeek-89b719252"
+                                <a href=""
                                     class="size-full white-clr flex a-center j-center">
                                     <i class="fa-brands fa-linkedin-in z-70"></i>
                                 </a>
                             </div>
                             <div class="github r-50 glass pointer glass relative">
-                                <a href="https://github.com/shafiiiq"
-                                    class="size-full white-clr flex a-center j-center">
+                                <a href="https://github.com/shafiiiq" class="size-full white-clr flex a-center j-center">
                                     <i class="fa-brands fa-github z-70"></i>
+                                </a>
+                            </div>
+                            <!-- whatsapp  -->
+                            <div class="whatsapp r-50 glass pointer glass relative">
+                                <a href="https://github.com/shafiiiq" class="size-full white-clr flex a-center j-center">
+                                    <i class="fa-brands fa-whatsapp z-70"></i>
                                 </a>
                             </div>
                         </div>
@@ -216,7 +233,7 @@
                         <h1>
                             100+
                         </h1>
-                        <span>Web Desings <br>
+                        <span>UI/UX <br>
                             Created</span>
                     </div>
                     <div class="item flex gap-2 a-center j-center">
@@ -245,10 +262,10 @@
     <section class="services" id="service">
         <div class="container p-inline-6 pt-9 white-clr pb-7 flex flex-col gap-3 size-full">
             <div class="services-head w-full flex flex-col a-center">
-                <h1 class="bold-600 service-h1">
+                <h1 class="bold-600 service-h1 moveUp">
                     My Quality Services
                 </h1>
-                <p class="t-center font-sm service-p">
+                <p class="t-center font-sm service-p moveUp">
                     We put your ideas and thus your wishes in the form of a unique web project that <br> inspires you
                     and you customers.
                 </p>
@@ -258,7 +275,7 @@
 
                 </div>
                 <!-- item 1  -->
-                <div class="item z-50 white-clr flex j-between w-full a-center p-inline-2" id="hover-1">
+                <div class="item z-50 moveUp white-clr flex j-between w-full a-center p-inline-2" id="hover-1">
                     <div class="sl-name flex a-center gap-1">
                         <span class="sl bold-600">01</span>
                         <span class="name bold-600">
@@ -278,7 +295,7 @@
                     </div>
                 </div>
                 <!-- item 2  -->
-                <div class="item z-50 flex j-between w-full a-center p-inline-2" id="hover-2">
+                <div class="item moveUp z-50 flex j-between w-full a-center p-inline-2" id="hover-2">
                     <div class="sl-name flex a-center gap-1">
                         <span class="sl bold-600">01</span>
                         <span class="name bold-600">
@@ -298,7 +315,7 @@
                     </div>
                 </div>
                 <!-- item 3  -->
-                <div class="item z-50 flex j-between w-full a-center p-inline-2" id="hover-3">
+                <div class="item moveUp z-50 flex j-between w-full a-center p-inline-2" id="hover-3">
                     <div class="sl-name flex a-center gap-1">
                         <span class="sl bold-600">01</span>
                         <span class="name bold-600">
@@ -318,7 +335,7 @@
                     </div>
                 </div>
                 <!-- item 4  -->
-                <div class="item flex j-between z-50 w-full a-center p-inline-2" id="hover-4">
+                <div class="item moveUp flex j-between z-50 w-full a-center p-inline-2" id="hover-4">
                     <div class="sl-name flex a-center gap-1">
                         <span class="sl bold-600">01</span>
                         <span class="name bold-600">
@@ -349,14 +366,14 @@
         <div class="container p-inline-6 pt-7 flex flex-col gap-2 white-clr">
             <!-- recent works head  -->
             <div class="recent-head flex flex-col gap-1 w-full a-center">
-                <h1 class="h1 bold-600-600" id="works-h1">
+                <h1 class="h1 bold-600 moveUp" id="works-h1">
                     My Recent Works
                 </h1>
-                <p class="t-center font-sm" id="works-p">
+                <p class="t-center font-sm moveUp" id="works-p">
                     We put your ideas and thus your wishes in the form of a unique web project that <br> inspires you
                     and you customers.
                 </p>
-                <div class="recent-navs mt-2 r-vh" id="works-ul">
+                <div class="recent-navs mt-2 r-vh moveUp" id="works-ul">
                     <ul class="size-full flex r-vh relative">
                         <div class="recent-focuser absolute left h-full r-vh"></div>
                         <li class="flex a-center j-center r-vh font-sm recent-active pointer z-50" id="all">
@@ -377,154 +394,294 @@
             <!-- recent works body  -->
             <div class="recent-body w-full mt-2">
                 <!-- recent all  -->
-                <div class="all grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
-                    <div class="item r-10 p-3 relative scroll-hidden work-item-top">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Homecraft</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
-                            </div>
+                <div class="all size-full">
+                    <div class="slider-wrapper scroll-hidden size-full relative">
+                        <!-- toggle to go backword through all works  -->
+                        <div class="all-prev toggle r-50 absolute z-60 flex j-center a-center abs-mid-y left pointer"
+                            onclick="allPrev()">
                             <span class="material-symbols-rounded">
-                                north_east
+                                arrow_back
                             </span>
                         </div>
-                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
-                            class="cover r-10 size-full">
-                    </div>
-                    <div class="item work-item-top r-10 p-3 relative scroll-hidden">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Homecraft</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
-                            </div>
+                        <!-- toggle to go forward through all works  -->
+                        <div class="all-next toggle r-50 absolute z-60 flex j-center a-center abs-mid-y right pointer"
+                            onclick="allNext()">
                             <span class="material-symbols-rounded">
-                                north_east
+                                arrow_forward
                             </span>
                         </div>
-                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
-                            class="cover r-10 size-full">
-                    </div>
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden work-item-bottom">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Homecraft</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
+                        <div class="slider-container scroll-x scroll-hidden-y size-full hide-scrollbar">
+                            <div class="slider flex gap-3">
+                                <div class="slider-item size-full" style="min-width: 100%;">
+                                    <div
+                                        class="all-grid grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
+                                        <div class="item r-10 p-3 relative work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg"
+                                                alt="" class="cover r-10 size-full">
+                                        </div>
+                                        <div class="item r-10 p-3 relative work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="images/contractor-webdesign.png" alt=""
+                                                class="cover r-10 size-full">
+                                        </div>
+                                        <div class="item r-10 p-3 relative work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="images/project-webdesign.png" alt="" class="cover r-10 size-full">
+                                        </div>
+                                        <div class="item r-10 p-3 relative  work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="images/portfolio-webdesign.png" alt=""
+                                                class="cover r-10 size-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item" style="min-width: 100%;">
+                                    <div
+                                        class="all-grid grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
+                                        <div class="item r-10 p-3 relative work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg"
+                                                alt="" class="cover r-10 size-full">
+                                        </div>
+                                        <div class="item r-10 p-3 relative  work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg"
+                                                alt="" class="cover r-10 size-full">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="material-symbols-rounded">
-                                north_east
-                            </span>
                         </div>
-                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
-                            class="cover r-10 size-full">
-                    </div>
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden work-item-bottom">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Homecraft</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
-                            </div>
-                            <span class="material-symbols-rounded">
-                                north_east
-                            </span>
-                        </div>
-                        <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg" alt=""
-                            class="cover r-10 size-full">
                     </div>
                 </div>
                 <!-- recent UI and UX  -->
-                <div class="ux-ui grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center"
-                    style="display: none;">
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Portfolio Adding Desing</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
-                            </div>
-                            <a href="https://github.com/shafiiiq/contractorPortfolio">
-                                <span class="material-symbols-rounded">
-                                    north_east
-                                </span>
-                            </a>
+                <div class="ux-ui size-full" style="display: none;">
+                    <div class="slider-wrapper scroll-hidden size-full relative">
+                        <!-- toggle to go backword through all works  -->
+                        <div class="ui-prev toggle r-50 absolute z-60 flex j-center a-center abs-mid-y left pointer"
+                            onclick="uiPrev()">
+                            <span class="material-symbols-rounded">
+                                arrow_back
+                            </span>
                         </div>
-                        <img src="images/portfolio-webdesign.png" alt="" class="cover r-10 size-full">
-                    </div>
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Home page</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
-                            </div>
-                            <a href="https://github.com/shafiiiq/contractorHomecraft">
-                                <span class="material-symbols-rounded">
-                                    north_east
-                                </span>
-                            </a>
+                        <!-- toggle to go forward through all works  -->
+                        <div class="ui-next toggle r-50 absolute z-60 flex j-center a-center abs-mid-y right pointer"
+                            onclick="uiNext()">
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </div>
-                        <img src="images/contractor-webdesign.png" alt="" class="cover r-10 size-full">
-                    </div>
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Homecraft Propety Desing</span>
-                                <span class="decription font-sm">
-                                    Project was succesfully completed
-                                </span>
+                        <div class="slider-container scroll-x scroll-hidden-y size-full hide-scrollbar">
+                            <div class="ui-slider flex gap-3">
+                                <div class="ui-slider-item size-full" style="min-width: 100%;">
+                                    <div class="ui-grid grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
+                                        <div class="item r-10 p-3 relative work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg"
+                                                alt="" class="cover r-10 size-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-slider-item" style="min-width: 100%;">
+                                    <div
+                                        class="all-grid grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
+                                        <div class="item r-10 p-3 relative work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg"
+                                                alt="" class="cover r-10 size-full">
+                                        </div>
+                                        <div class="item r-10 p-3 relative  work-item-top">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft</span>
+                                                    <span class="decription font-sm">
+                                                        Project was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <span class="material-symbols-rounded">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                            <img src="https://i.pinimg.com/originals/fa/b3/59/fab3598f26c9257ea359c81c538d0e06.jpg"
+                                                alt="" class="cover r-10 size-full">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="https://github.com/shafiiiq/property">
-                                <span class="material-symbols-rounded">
-                                    north_east
-                                </span>
-                            </a>
                         </div>
-                        <img src="images/project-webdesign.png" alt="" class="cover r-10 size-full">
                     </div>
                 </div>
                 <!-- recent branding  -->
-                <div class="branding grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center"
-                    style="display: none;">
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Homecraft the contracting platform Logo</span>
-                                <span class="decription font-sm">
-                                    Design was succesfully completed
-                                </span>
-                            </div>
-                            <a href="images/homecraft-logo.png">
-                                <span class="material-symbols-rounded">
-                                    north_east
-                                </span>
-                            </a>
+                <div class="branding size-full" style="display: none;">
+                    <div class="slider-wrapper scroll-hidden size-full relative">
+                        <!-- toggle to go backword through all works  -->
+                        <div class="branding-prev toggle r-50 absolute z-60 flex j-center a-center abs-mid-y left pointer" onclick="brandingPrev()">
+                            <span class="material-symbols-rounded">
+                                arrow_back
+                            </span>
                         </div>
-                        <img src="images/homecraft-logo.png" alt="" class="contain r-10 size-full">
-                    </div>
-                    <div class="item r-10 p-3 recent-anim relative scroll-hidden">
-                        <div class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
-                            <div class="known flex flex-col h-full j-center">
-                                <span class="name font-xl bold-600">Depot the E-commerce Logo</span>
-                                <span class="decription font-sm">
-                                    Desing was succesfully completed
-                                </span>
-                            </div>
-                            <a href="images/depot-logo.png">
-                                <span class="material-symbols-rounded">
-                                    north_east
-                                </span>
-                            </a>
+                        <!-- toggle to go forward through all works  -->
+                        <div class="branding-next toggle r-50 absolute z-60 flex j-center a-center abs-mid-y right pointer" onclick="brandingNext()">
+                            <span class="material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </div>
-                        <img src="images/depot-logo.png" alt="" class="cover r-10 size-full">
+                        <!-- slider container  -->
+                        <div class="slider-container scroll-x scroll-hidden-y size-full hide-scrollbar">
+                            <div class="branding-slider flex gap-3">
+                                <!-- slider item starts  -->
+                                <div class="branding-slider-item size-full" style="min-width: 100%;">
+                                    <div class="ui-grid grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
+                                        <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Homecraft the contracting
+                                                        platform Logo</span>
+                                                    <span class="decription font-sm">
+                                                        Design was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <a href="images/homecraft-logo.png">
+                                                    <span class="material-symbols-rounded">
+                                                        north_east
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <img src="images/homecraft-logo.png" alt="" class="contain r-10 size-full">
+                                        </div>
+                                        <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Depot the E-commerce Logo</span>
+                                                    <span class="decription font-sm">
+                                                        Desing was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <a href="images/depot-logo.png">
+                                                    <span class="material-symbols-rounded">
+                                                        north_east
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <img src="images/depot-logo.png" alt="" class="cover r-10 size-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-slider-item" style="min-width: 100%;">
+                                    <div class="all-grid grid r-repeat-2 c-repeat-2 gap-3 size-full pi-center ji-center">
+                                        <div class="item r-10 p-3 recent-anim relative scroll-hidden">
+                                            <div
+                                                class="work-details r-10 absolute pointer abs-mid-x p-inline-2 flex j-between a-center">
+                                                <div class="known flex flex-col h-full j-center">
+                                                    <span class="name font-xl bold-600">Depot the E-commerce Logo</span>
+                                                    <span class="decription font-sm">
+                                                        Desing was succesfully completed
+                                                    </span>
+                                                </div>
+                                                <a href="images/depot-logo.png">
+                                                    <span class="material-symbols-rounded">
+                                                        north_east
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <img src="images/depot-logo.png" alt="" class="cover r-10 size-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- recent apps  -->
@@ -572,7 +729,7 @@
         <div class="contaienr p-inline-6 pt-10 flex size-full">
             <!-- experience  -->
             <div class="experience h-full w-half flex flex-col gap-3 p-inline-2 a-center">
-                <div class="experience-head flex gap-1 a-center j-start w-full">
+                <div class="experience-head moveUp flex gap-1 a-center j-start w-full">
                     <span class="material-symbols-rounded resume-h1">
                         award_star
                     </span>
@@ -580,7 +737,7 @@
                 </div>
                 <div class="experience-lists w-full">
                     <ul class="w-full flex flex-col gap-2">
-                        <li class="resume-left flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-left moveRight flex flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2023 - Present
                             </span>
@@ -589,7 +746,7 @@
                                 By Self
                             </span>
                         </li>
-                        <li class="resume-right flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-right moveUp flex flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2023 - 2024
                             </span>
@@ -598,7 +755,7 @@
                                 By Self
                             </span>
                         </li>
-                        <li class="resume-right-1 flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-right-1 moveLeft flex flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2022 - 2023
                             </span>
@@ -607,7 +764,7 @@
                                 By Self
                             </span>
                         </li>
-                        <li class="resume-left-1 flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-left-1 flex moveDown flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2021 - 2022
                             </span>
@@ -621,7 +778,7 @@
             </div>
             <!-- education  -->
             <div class="experience h-full w-half flex flex-col gap-3 p-inline-2 a-center">
-                <div class="experience-head flex gap-1 a-center j-start w-full">
+                <div class="experience-head moveUp flex gap-1 a-center j-start w-full">
                     <span class="material-symbols-rounded resume-h1">
                         school
                     </span>
@@ -629,7 +786,7 @@
                 </div>
                 <div class="experience-lists w-full">
                     <ul class="w-full flex flex-col gap-2">
-                        <li class="resume-right flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-right moveDown flex flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2021 - 2024
                             </span>
@@ -638,7 +795,7 @@
                                 College of Applied Science, Adoor
                             </span>
                         </li>
-                        <li class="resume-left flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-left moveLeft flex flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2019 - 2021
                             </span>
@@ -647,7 +804,7 @@
                                 Govt. HSS Thottakkonam
                             </span>
                         </li>
-                        <li class="resume-right-1 flex flex-col w-full white-clr r-15  p-inline-2 j-center">
+                        <li class="resume-right-1 moveUp flex flex-col w-full white-clr r-15  p-inline-2 j-center">
                             <span class="bold-500 year">
                                 2018 - 2019
                             </span>
@@ -740,6 +897,16 @@
                 </div>
                 <!-- photoshop  -->
                 <div class="item flex flex-col j-center a-center gap-1 moveRight">
+                    <div class="logo w-full flex flex-col gap-2 r-20 ease-10 a-center j-center font-xl bold-600">
+                        <img src="images/git.png" alt="" class="ease-10">
+                        96%
+                    </div>
+                    <p class="font-sm">
+                        Git
+                    </p>
+                </div>
+                <!-- photoshop  -->
+                <div class="item flex flex-col j-center a-center gap-1 moveDown">
                     <div class="logo w-full flex flex-col gap-2 r-20 ease-10 a-center j-center font-xl bold-600">
                         <img src="images/photoshop.png" alt="" class="ease-10">
                         96%

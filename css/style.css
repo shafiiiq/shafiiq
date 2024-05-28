@@ -10,7 +10,7 @@
     transform: translateY(-4rem);
     opacity: 0;
   }
-  
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -28,7 +28,7 @@
     transform: translateY(0);
     opacity: 1;
   }
-  
+
   100% {
     transform: translateY(-4rem);
     opacity: 0;
@@ -45,7 +45,7 @@
     transform: translateY(4rem);
     opacity: 0;
   }
-  
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -62,7 +62,7 @@
     transform: translateY(0);
     opacity: 1;
   }
-  
+
   100% {
     transform: translateY(4rem);
     opacity: 0;
@@ -79,7 +79,7 @@
     transform: translateX(4rem);
     opacity: 0;
   }
-  
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -96,7 +96,7 @@
     transform: translateX(0);
     opacity: 1;
   }
-  
+
   100% {
     transform: translateX(4rem);
     opacity: 0;
@@ -130,7 +130,7 @@
     transform: translateX(0);
     opacity: 1;
   }
-  
+
   100% {
     transform: translateX(-4rem);
     opacity: 0;
@@ -234,6 +234,7 @@ svg {
   stroke-dashoffset: 219.9;
   transition: stroke-dashoffset 0.2s;
 }
+
 /* circle scroll bar ends  */
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
@@ -274,6 +275,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--thumb);
   border-radius: 100vh;
 }
+
 /* body styles end  */
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ *
@@ -338,21 +340,10 @@ header .header {
   display: inline-block;
 }
 
-.navs-li:first-child::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  background: var(--gradiant-1);
-  height: 2px;
-  border-radius: 100vh;
-}
 
 .navs-li::after {
   position: absolute;
   bottom: 0;
-  left: 0;
   content: "";
   width: 0;
   background: var(--gradiant-1);
@@ -360,45 +351,55 @@ header .header {
   border-radius: 100vh;
 }
 
-.navs-li:not(:first-child):hover::after {
-  animation: expand 0.4s forwards;
+.nav-active {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradiant-1);
+  border-radius: 100vh;
+}
+
+/* .navs-li:not(:first-child):hover::after {
+  animation: expand 0.4s ease forwards;
+  left: 0;
+} */
+
+.navs-li:hover::after {
+  animation: expand 0.4s ease forwards;
+  left: 0;
 }
 
 .navs-li::after {
   transition: none;
 }
 
-.navs-li:not(:first-child):not(:hover)::after {
-  animation: contract 0.4s ease;
+.navs-li:not(:hover)::after {
+  right: 0;
+  animation: contract 0.4s ease forwards;
 }
 
 @keyframes expand {
   from {
     width: 0;
-    left: 0;
-    right: auto;
   }
 
   to {
     width: 100%;
-    left: 0;
-    right: auto;
   }
 }
 
 @keyframes contract {
   from {
     width: 100%;
-    left: 0;
-    right: auto;
   }
 
   to {
     width: 0;
-    left: auto;
-    right: 0;
   }
 }
+/* header li hover animation  ends */
+
 
 /* custom button  */
 .btn {
@@ -440,6 +441,7 @@ header .header {
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
   }
 }
+
 /* header ends  */
 
 /* home section starts */
@@ -553,7 +555,7 @@ section.home .container::before {
   font-size: 20px;
 }
 
-.social > div::after {
+.social>div::after {
   content: "";
   position: absolute;
   height: 0;
@@ -567,11 +569,12 @@ section.home .container::before {
   transition: all 0.6s cubic-bezier(0.25, 0.46, 0.145, 0.94);
 }
 
-.social > div:hover::after {
+.social>div:hover::after {
   opacity: 1;
   height: 100%;
   width: 100%;
 }
+
 /* home section ends  */
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------  */
@@ -705,6 +708,7 @@ section.services {
     opacity: 0;
   }
 }
+
 /* end of first item anim  */
 
 /* Animation for service item 2 */
@@ -744,6 +748,7 @@ section.services {
     opacity: 0;
   }
 }
+
 /* end of item 2 */
 
 /* Animation for service item 3 */
@@ -783,6 +788,7 @@ section.services {
     opacity: 0;
   }
 }
+
 /* end of item 3  */
 
 /* Animation for service item 4 */
@@ -822,6 +828,7 @@ section.services {
     opacity: 0;
   }
 }
+
 /* end of item 4  */
 
 /* end of servie p animation  */
@@ -849,6 +856,7 @@ section.services {
   background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
   transition: transform 0.5s ease;
 }
+
 /* servive section ends  */
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
@@ -915,7 +923,7 @@ section.recent-works {
   transition: bottom 0.4s cubic-bezier(0.13, 0.25, 0.32, 1.03);
 }
 
-.recent-body .item .work-details a > span {
+.recent-body .item .work-details a>span {
   font-size: 60px;
 }
 
@@ -923,6 +931,19 @@ section.recent-works {
   bottom: 2rem;
   opacity: 1;
 }
+
+.toggle {
+  height: 4rem;
+  width: 4rem;
+  background-color: rgb(34, 22, 68);
+  border: 2px solid #9000ff;
+  color: #9000ff;
+}
+
+.toggle>span {
+  font-size: 34px;
+}
+
 /* recent works section ends  */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -960,6 +981,7 @@ section.resume {
 .experience-lists ul li .role {
   font-size: 36px;
 }
+
 /* resume section ends  */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1003,6 +1025,7 @@ section.skills {
 .skills .skills-body .item:hover .logo img {
   filter: saturate(1);
 }
+
 /* skills section ends  */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1043,6 +1066,7 @@ input[type="submit"] {
   width: 3.5rem;
   background: var(--gradiant-1);
 }
+
 /* contact section ends   */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1075,6 +1099,7 @@ footer .container>p {
 .back-to-top a:hover {
   color: rgb(122, 61, 167);
 }
+
 /* footer section ends  */
 
 

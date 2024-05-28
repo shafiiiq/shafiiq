@@ -55,29 +55,29 @@ window.addEventListener('scroll', function () {
     // service section starts  
 
     // servie h1 animation 
-    if (scrollY >= 520) {
-        document.querySelector('.service-h1').classList.remove('downOut');
-        document.querySelector('.service-h1').classList.add('downIn');
-    } else {
-        document.querySelector('.service-h1').classList.remove('downIn');
-        document.querySelector('.service-h1').classList.add('downOut');
-    }
+    // if (scrollY >= 520) {
+    //     document.querySelector('.service-h1').classList.remove('downOut');
+    //     document.querySelector('.service-h1').classList.add('downIn');
+    // } else {
+    //     document.querySelector('.service-h1').classList.remove('downIn');
+    //     document.querySelector('.service-h1').classList.add('downOut');
+    // }
 
     // servie p animation 
-    if (scrollY >= 580) {
-        document.querySelector('.service-p').classList.remove('downOut');
-        document.querySelector('.service-p').classList.add('downIn');
-    } else {
-        document.querySelector('.service-p').classList.remove('downIn');
-        document.querySelector('.service-p').classList.add('downOut');
-    }
+    // if (scrollY >= 580) {
+    //     document.querySelector('.service-p').classList.remove('downOut');
+    //     document.querySelector('.service-p').classList.add('downIn');
+    // } else {
+    //     document.querySelector('.service-p').classList.remove('downIn');
+    //     document.querySelector('.service-p').classList.add('downOut');
+    // }
 
     // service item one by one animation 
 
     // item 1 
-    if (scrollY >= 780) {
-        document.getElementById('hover-1').classList.remove('downOut');
-        document.getElementById('hover-1').classList.add('downIn');
+    // if (scrollY >= 780) {
+    //     document.getElementById('hover-1').classList.remove('downOut');
+    //     document.getElementById('hover-1').classList.add('downIn');
 
         // intialy focuser on item one so animated that initialy 
         // if (scrollY == 620) {
@@ -91,37 +91,37 @@ window.addEventListener('scroll', function () {
         //     document.querySelector('.focuser').classList.remove('downOut')
         // }
 
-    } else {
-        document.getElementById('hover-1').classList.remove('downIn')
-        document.getElementById('hover-1').classList.add('downOut')
-    }
+    // } else {
+    //     document.getElementById('hover-1').classList.remove('downIn')
+    //     document.getElementById('hover-1').classList.add('downOut')
+    // }
 
     // item 2 
-    if (scrollY >= 840) {
-        document.getElementById('hover-2').classList.remove('downOut');
-        document.getElementById('hover-2').classList.add('downIn');
-    } else {
-        document.getElementById('hover-2').classList.remove('downIn')
-        document.getElementById('hover-2').classList.add('downOut')
-    }
+    // if (scrollY >= 840) {
+    //     document.getElementById('hover-2').classList.remove('downOut');
+    //     document.getElementById('hover-2').classList.add('downIn');
+    // } else {
+    //     document.getElementById('hover-2').classList.remove('downIn')
+    //     document.getElementById('hover-2').classList.add('downOut')
+    // }
 
     // item 3 
-    if (scrollY >= 890) {
-        document.getElementById('hover-3').classList.remove('downOut');
-        document.getElementById('hover-3').classList.add('downIn');
-    } else {
-        document.getElementById('hover-3').classList.remove('downIn')
-        document.getElementById('hover-3').classList.add('downOut')
-    }
+    // if (scrollY >= 890) {
+    //     document.getElementById('hover-3').classList.remove('downOut');
+    //     document.getElementById('hover-3').classList.add('downIn');
+    // } else {
+    //     document.getElementById('hover-3').classList.remove('downIn')
+    //     document.getElementById('hover-3').classList.add('downOut')
+    // }
 
     // item 4 
-    if (scrollY >= 930) {
-        document.getElementById('hover-4').classList.remove('downOut');
-        document.getElementById('hover-4').classList.add('downIn');
-    } else {
-        document.getElementById('hover-4').classList.remove('downIn')
-        document.getElementById('hover-4').classList.add('downOut')
-    }
+    // if (scrollY >= 930) {
+    //     document.getElementById('hover-4').classList.remove('downOut');
+    //     document.getElementById('hover-4').classList.add('downIn');
+    // } else {
+    //     document.getElementById('hover-4').classList.remove('downIn')
+    //     document.getElementById('hover-4').classList.add('downOut')
+    // }
     // ends of items animation 
 
     // servie body focuser animation 
@@ -144,42 +144,42 @@ window.addEventListener('scroll', function () {
     // starts the my works section 
 
     // animation for h1 
-    if (scrollY >= 1600) {
-        document.getElementById('works-h1').classList.remove('downOut');
-        document.getElementById('works-h1').classList.add('downIn');
-    } else {
-        document.getElementById('works-h1').classList.remove('downIn')
-        document.getElementById('works-h1').classList.add('downOut')
-    }
+    // if (scrollY >= 1600) {
+    //     document.getElementById('works-h1').classList.remove('downOut');
+    //     document.getElementById('works-h1').classList.add('downIn');
+    // } else {
+    //     document.getElementById('works-h1').classList.remove('downIn')
+    //     document.getElementById('works-h1').classList.add('downOut')
+    // }
 
-    // animation for p 
-    if (scrollY >= 1610) {
-        document.getElementById('works-p').classList.remove('downOut');
-        document.getElementById('works-p').classList.add('downIn');
-    } else {
-        document.getElementById('works-p').classList.remove('downIn')
-        document.getElementById('works-p').classList.add('downOut')
-    }
+    // // animation for p 
+    // if (scrollY >= 1610) {
+    //     document.getElementById('works-p').classList.remove('downOut');
+    //     document.getElementById('works-p').classList.add('downIn');
+    // } else {
+    //     document.getElementById('works-p').classList.remove('downIn')
+    //     document.getElementById('works-p').classList.add('downOut')
+    // }
 
-    // animation for ul navigation 
-    if (scrollY >= 1720) {
-        document.getElementById('works-ul').classList.remove('downOut');
-        document.getElementById('works-ul').classList.add('downIn');
-    } else {
-        document.getElementById('works-ul').classList.remove('downIn')
-        document.getElementById('works-ul').classList.add('downOut')
-    }
+    // // animation for ul navigation 
+    // if (scrollY >= 1720) {
+    //     document.getElementById('works-ul').classList.remove('downOut');
+    //     document.getElementById('works-ul').classList.add('downIn');
+    // } else {
+    //     document.getElementById('works-ul').classList.remove('downIn')
+    //     document.getElementById('works-ul').classList.add('downOut')
+    // }
 
-    // animation for items 
-    if (scrollY >= 1860) {
-        document.querySelectorAll('.recent-works .item').forEach(function (element) {
-            element.classList.add('recent-anim');
-        });
-    } else if (scrollY <= 1660) {
-        document.querySelectorAll('.recent-works .item').forEach(function (element) {
-            element.classList.remove('recent-anim');
-        });
-    }
+    // // animation for items 
+    // if (scrollY >= 1860) {
+    //     document.querySelectorAll('.recent-works .item').forEach(function (element) {
+    //         element.classList.add('recent-anim');
+    //     });
+    // } else if (scrollY <= 1660) {
+    //     document.querySelectorAll('.recent-works .item').forEach(function (element) {
+    //         element.classList.remove('recent-anim');
+    //     });
+    // }
     // end of the recent works section 
 
     // ----------------------------------------------------------------
@@ -187,58 +187,58 @@ window.addEventListener('scroll', function () {
     // start of the resume section 
 
     // animation for resume h1 
-    if (scrollY >= 3440) {
-        document.querySelectorAll('.resume-h1').forEach(function (element) {
-            element.classList.remove('downOut');
-            element.classList.add('downIn');
-        });
-    } else {
-        document.querySelectorAll('.resume-h1').forEach(function (element) {
-            element.classList.remove('downIn');
-            element.classList.add('downOut');
-        });
-    }
+    // if (scrollY >= 3440) {
+    //     document.querySelectorAll('.resume-h1').forEach(function (element) {
+    //         element.classList.remove('downOut');
+    //         element.classList.add('downIn');
+    //     });
+    // } else {
+    //     document.querySelectorAll('.resume-h1').forEach(function (element) {
+    //         element.classList.remove('downIn');
+    //         element.classList.add('downOut');
+    //     });
+    // }
 
-    if (scrollY >= 3580) {
-        document.querySelectorAll('.resume-left').forEach(function (element) {
-            element.classList.remove('leftOut');
-            element.classList.add('leftIn');
-        });
-        document.querySelectorAll('.resume-right').forEach(function (element) {
-            element.classList.remove('rightOut');
-            element.classList.add('rightIn');
-        });
-    } else {
-        document.querySelectorAll('.resume-left').forEach(function (element) {
-            element.classList.remove('leftIn');
-            element.classList.add('leftOut');
-        });
-        document.querySelectorAll('.resume-right').forEach(function (element) {
-            element.classList.remove('rightIn');
-            element.classList.add('rightOut');
-        });
-    }
+    // if (scrollY >= 3580) {
+    //     document.querySelectorAll('.resume-left').forEach(function (element) {
+    //         element.classList.remove('leftOut');
+    //         element.classList.add('leftIn');
+    //     });
+    //     document.querySelectorAll('.resume-right').forEach(function (element) {
+    //         element.classList.remove('rightOut');
+    //         element.classList.add('rightIn');
+    //     });
+    // } else {
+    //     document.querySelectorAll('.resume-left').forEach(function (element) {
+    //         element.classList.remove('leftIn');
+    //         element.classList.add('leftOut');
+    //     });
+    //     document.querySelectorAll('.resume-right').forEach(function (element) {
+    //         element.classList.remove('rightIn');
+    //         element.classList.add('rightOut');
+    //     });
+    // }
 
-    // next two sets 
-    if (scrollY >= 3780) {
-        document.querySelectorAll('.resume-left-1').forEach(function (element) {
-            element.classList.remove('leftOut');
-            element.classList.add('leftIn');
-        });
-        document.querySelectorAll('.resume-right-1').forEach(function (element) {
-            element.classList.remove('rightOut');
-            element.classList.add('rightIn');
-        });
-    } else {
-        document.querySelectorAll('.resume-left-1').forEach(function (element) {
-            element.classList.remove('leftIn');
-            element.classList.add('leftOut');
-        });
-        document.querySelectorAll('.resume-right-1').forEach(function (element) {
-            element.classList.remove('rightIn');
-            element.classList.add('rightOut');
-        });
-    }
+    // // next two sets 
+    // if (scrollY >= 3780) {
+    //     document.querySelectorAll('.resume-left-1').forEach(function (element) {
+    //         element.classList.remove('leftOut');
+    //         element.classList.add('leftIn');
+    //     });
+    //     document.querySelectorAll('.resume-right-1').forEach(function (element) {
+    //         element.classList.remove('rightOut');
+    //         element.classList.add('rightIn');
+    //     });
+    // } else {
+    //     document.querySelectorAll('.resume-left-1').forEach(function (element) {
+    //         element.classList.remove('leftIn');
+    //         element.classList.add('leftOut');
+    //     });
+    //     document.querySelectorAll('.resume-right-1').forEach(function (element) {
+    //         element.classList.remove('rightIn');
+    //         element.classList.add('rightOut');
+    //     });
+    // }
 
 });
 // end of the window scroll detection for animation 
@@ -388,3 +388,119 @@ moveRight.forEach(element => {
     windowObserver.observe(element);
 });
 
+// recent works section all corousle item prev and next action listner function
+
+// for all 
+const slider = document.querySelector('.slider');
+const sliderItems = document.querySelectorAll('.slider-item');
+let currentIndex = 0;
+const gap = 3 * 16; // 3rem gap in pixels (1rem = 16px)
+
+function allPrev() {
+    const sliderItemWidth = sliderItems[0].offsetWidth + gap; // Include the gap
+    currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+    const offset = -currentIndex * sliderItemWidth;
+    slider.style.transition = 'transform 0.5s ease-in-out';
+    slider.style.transform = `translateX(${offset}px)`;
+}
+
+function allNext() {
+    const sliderItemWidth = sliderItems[0].offsetWidth + gap; // Include the gap
+    currentIndex = (currentIndex + 1) % sliderItems.length;
+    const offset = -currentIndex * sliderItemWidth;
+    slider.style.transition = 'transform 0.5s ease-in-out';
+    slider.style.transform = `translateX(${offset}px)`;
+}
+
+// for ui ux 
+const uiSlider = document.querySelector('.ui-slider');
+const uiSliderItems = document.querySelectorAll('.ui-slider-item');
+let uiCurrentIndex = 0;
+const uiGap = 3 * 16; // 3rem gap in pixels (1rem = 16px)
+
+function uiPrev() {
+    const sliderItemWidth = uiSliderItems[0].offsetWidth + uiGap; // Include the gap
+    uiCurrentIndex = (uiCurrentIndex - 1 + uiSliderItems.length) % uiSliderItems.length;
+    const offset = -uiCurrentIndex * sliderItemWidth;
+    uiSlider.style.transition = 'transform 0.5s ease-in-out';
+    uiSlider.style.transform = `translateX(${offset}px)`;
+}
+
+function uiNext() {
+    const sliderItemWidth = uiSliderItems[0].offsetWidth + uiGap; // Include the gap
+    uiCurrentIndex = (uiCurrentIndex + 1) % uiSliderItems.length;
+    const offset = -uiCurrentIndex * sliderItemWidth;
+    uiSlider.style.transition = 'transform 0.5s ease-in-out';
+    uiSlider.style.transform = `translateX(${offset}px)`;
+}
+
+// for branding 
+const brandingSlider = document.querySelector('.branding-slider');
+const brandingSliderItems = document.querySelectorAll('.branding-slider-item');
+let brandingCurrentIndex = 0;
+const brandingGap = 3 * 16; // 3rem gap in pixels (1rem = 16px)
+
+function brandingPrev() {
+    console.log("Prev called"); // Debugging
+    const sliderItemWidth = brandingSliderItems[0].offsetWidth + brandingGap; // Include the gap
+    brandingCurrentIndex = (brandingCurrentIndex - 1 + brandingSliderItems.length) % brandingSliderItems.length;
+    const offset = -brandingCurrentIndex * sliderItemWidth;
+    brandingSlider.style.transition = 'transform 0.5s ease-in-out';
+    brandingSlider.style.transform = `translateX(${offset}px)`;
+}
+
+function brandingNext() {
+    console.log("Next called"); // Debugging
+    const sliderItemWidth = brandingSliderItems[0].offsetWidth + brandingGap; // Include the gap
+    brandingCurrentIndex = (brandingCurrentIndex + 1) % brandingSliderItems.length;
+    const offset = -brandingCurrentIndex * sliderItemWidth;
+    brandingSlider.style.transition = 'transform 0.5s ease-in-out';
+    brandingSlider.style.transform = `translateX(${offset}px)`;
+}
+
+
+document.querySelector('.nav-home').addEventListener('click', function() {
+    document.querySelector('.home-focuser').style.display = 'flex';
+    document.querySelector('.service-focuser').style.display = 'none';
+    document.querySelector('.works-focuser').style.display = 'none';
+    document.querySelector('.resume-focuser').style.display = 'none';
+    document.querySelector('.skills-focuser').style.display = 'none';
+    document.querySelector('.contact-focuser').style.display = 'none';
+});
+
+document.querySelector('.nav-service').addEventListener('click', function() {
+    document.querySelector('.service-focuser').style.display = 'flex';
+    document.querySelector('.home-focuser').style.display = 'none';
+    document.querySelector('.works-focuser').style.display = 'none';
+    document.querySelector('.resume-focuser').style.display = 'none';
+    document.querySelector('.skills-focuser').style.display = 'none';
+    document.querySelector('.contact-focuser').style.display = 'none';
+});
+
+document.querySelector('.nav-works').addEventListener('click', function() {
+    document.querySelector('.works-focuser').style.display = 'flex';
+    document.querySelector('.service-focuser').style.display = 'none';
+    document.querySelector('.home-focuser').style.display = 'none';
+    document.querySelector('.resume-focuser').style.display = 'none';
+    document.querySelector('.skills-focuser').style.display = 'none';
+    document.querySelector('.contact-focuser').style.display = 'none';
+});
+
+document.querySelector('.nav-skills').addEventListener('click', function() {
+    document.querySelector('.skills-focuser').style.display = 'flex';
+    document.querySelector('.service-focuser').style.display = 'none';
+    document.querySelector('.home-focuser').style.display = 'none';
+    document.querySelector('.works-focuser').style.display = 'none';
+    document.querySelector('.resume-focuser').style.display = 'none';
+    document.querySelector('.contact-focuser').style.display = 'none';
+});
+  
+
+document.querySelector('.nav-contact').addEventListener('click', function() {
+    document.querySelector('.contact-focuser').style.display = 'flex';
+    document.querySelector('.service-focuser').style.display = 'none';
+    document.querySelector('.home-focuser').style.display = 'none';
+    document.querySelector('.works-focuser').style.display = 'none';
+    document.querySelector('.resume-focuser').style.display = 'none';
+    document.querySelector('.skills-focuser').style.display = 'none';
+});
