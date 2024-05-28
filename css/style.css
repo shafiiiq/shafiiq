@@ -1,5 +1,150 @@
+/* animation classes  */
+
+/* up in animation */
+.upIn {
+  animation: upInAnim 0.6s ease forwards;
+}
+
+@keyframes upInAnim {
+  0% {
+    transform: translateY(-4rem);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* up out animation  */
+.upOut {
+  animation: upOutAnim 0.6s ease forwards;
+}
+
+
+@keyframes upOutAnim {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(-4rem);
+    opacity: 0;
+  }
+}
+
+/* down in animation */
+.downIn {
+  animation: downInAnim 0.6s ease forwards;
+}
+
+@keyframes downInAnim {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* down out animation */
+.downOut {
+  animation: downOutAnim 0.6s ease forwards;
+}
+
+@keyframes downOutAnim {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+}
+
+/* right in animation */
+.rightIn {
+  animation: rightInAnim 0.6s ease forwards;
+}
+
+@keyframes rightInAnim {
+  0% {
+    transform: translateX(4rem);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* right out animation */
+.rightOut {
+  animation: rightOutAnim 0.6s ease forwards;
+}
+
+@keyframes rightOutAnim {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateX(4rem);
+    opacity: 0;
+  }
+}
+
+/* left in animation */
+.leftIn {
+  animation: leftInAnim 0.6s ease forwards;
+}
+
+@keyframes leftInAnim {
+  0% {
+    transform: translateX(-4rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* left out animation */
+.leftOut {
+  animation: leftOutAnim 0.6s ease forwards;
+}
+
+@keyframes leftOutAnim {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateX(-4rem);
+    opacity: 0;
+  }
+}
+
+/* animation classes ends  */
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------  */
+
 /* common h1 styles  */
 .h1 {
+  font-size: 54px;
   background: var(--gradiant-2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -7,6 +152,8 @@
   text-fill-color: transparent;
   line-height: 5.5rem;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* cicle scroll bar custom  */
 .circle-wrapper {
@@ -61,9 +208,7 @@
   height: 70px;
   border-radius: 50%;
   border: 1px solid #2a1454;
-  /* Dark border */
   background-color: transparent;
-  /* Transparent background */
   position: relative;
 }
 
@@ -74,7 +219,6 @@
   width: 100%;
   height: 100%;
   transform: rotate(-90deg);
-  /* Rotate to start animation from the top */
 }
 
 svg {
@@ -85,17 +229,14 @@ svg {
 .path {
   fill: none;
   stroke: #8750f7;
-  /* Light border color */
   stroke-width: 2;
   stroke-dasharray: 219.9;
-  /* This should be the circumference of the circle */
   stroke-dashoffset: 219.9;
-  /* Start with no stroke visible */
   transition: stroke-dashoffset 0.2s;
 }
-
 /* circle scroll bar ends  */
 
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 
 /* body styles  */
 body {
@@ -133,11 +274,12 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--thumb);
   border-radius: 100vh;
 }
-
 /* body styles end  */
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------ *
 
 /* header section starts  */
+
 /* animated hero header */
 header.animated-header {
   background-color: var(--black-color);
@@ -224,7 +366,6 @@ header .header {
 
 .navs-li::after {
   transition: none;
-  /* Ensures no transition interference */
 }
 
 .navs-li:not(:first-child):not(:hover)::after {
@@ -258,7 +399,6 @@ header .header {
     right: 0;
   }
 }
-
 
 /* custom button  */
 .btn {
@@ -300,7 +440,6 @@ header .header {
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
   }
 }
-
 /* header ends  */
 
 /* home section starts */
@@ -334,7 +473,7 @@ section.home .container::before {
 
 .role-of-me {
   font-size: 80px;
-  background: linear-gradient(to right, #8750f7 0%, var(--white-color) 100%);
+  background: var(--gradiant-2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -368,7 +507,7 @@ section.home .container::before {
 }
 
 .home-text-anim h1 {
-  margin-left: 14rem;
+  /* margin-left: 14rem; */
   font-size: 20rem;
   color: transparent;
   -webkit-text-stroke: 2px #2a1454;
@@ -414,8 +553,28 @@ section.home .container::before {
   font-size: 20px;
 }
 
+.social > div::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  background-color: #9000ff;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.145, 0.94);
+}
+
+.social > div:hover::after {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
 /* home section ends  */
 
+/* -------------------------------------------------------------------------------------------------------------------------------------------  */
 
 /* services section starts  */
 section.services {
@@ -469,7 +628,7 @@ section.services {
   }
 }
 
-/* servie p animation  */
+/* servie p animation start*/
 .services .service-p {
   transform: translateY(2rem);
   opacity: 0;
@@ -546,7 +705,6 @@ section.services {
     opacity: 0;
   }
 }
-
 /* end of first item anim  */
 
 /* Animation for service item 2 */
@@ -586,6 +744,7 @@ section.services {
     opacity: 0;
   }
 }
+/* end of item 2 */
 
 /* Animation for service item 3 */
 .services .item:nth-child(4) {
@@ -624,6 +783,7 @@ section.services {
     opacity: 0;
   }
 }
+/* end of item 3  */
 
 /* Animation for service item 4 */
 .services .item:nth-child(5) {
@@ -662,6 +822,9 @@ section.services {
     opacity: 0;
   }
 }
+/* end of item 4  */
+
+/* end of servie p animation  */
 
 
 .services .services-body .item {
@@ -686,17 +849,19 @@ section.services {
   background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
   transition: transform 0.5s ease;
 }
-
 /* servive section ends  */
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* recent works section starts  */
 section.recent-works {
-  height: 215vh;
+  height: 230vh;
   background: var(--section-gradiant-1);
 }
 
 .recent-works .recent-head h1 {
   font-size: 54px;
+  opacity: 0;
 }
 
 .recent-head .recent-navs {
@@ -758,8 +923,9 @@ section.recent-works {
   bottom: 2rem;
   opacity: 1;
 }
-
 /* recent works section ends  */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* resume section starts  */
 section.resume {
@@ -794,8 +960,9 @@ section.resume {
 .experience-lists ul li .role {
   font-size: 36px;
 }
-
 /* resume section ends  */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* skills section start  */
 section.skills {
@@ -836,13 +1003,14 @@ section.skills {
 .skills .skills-body .item:hover .logo img {
   filter: saturate(1);
 }
-
 /* skills section ends  */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* contact section starts  */
 section.contact {
   height: 120vh;
-  background: linear-gradient(180deg, #0f0715 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
+  background: var(--section-gradiant-2);
 }
 
 section.contact .contact-left {
@@ -875,8 +1043,9 @@ input[type="submit"] {
   width: 3.5rem;
   background: var(--gradiant-1);
 }
-
 /* contact section ends   */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* footer section starts  */
 footer {
@@ -906,3 +1075,8 @@ footer .container>p {
 .back-to-top a:hover {
   color: rgb(122, 61, 167);
 }
+/* footer section ends  */
+
+
+
+/* -----------------------------------------  ended the shafiiq portfolio css design succesfully ------------------------------------------- */
