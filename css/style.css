@@ -193,7 +193,7 @@
 
 .circle-container>span {
   font-size: 35px;
-  color: #8750f7;
+  color: var(--accent-2);
 }
 
 .circle-container {
@@ -207,7 +207,7 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 1px solid #2a1454;
+  border: 1px solid var(--accent-4);
   background-color: transparent;
   position: relative;
 }
@@ -228,7 +228,7 @@ svg {
 
 .path {
   fill: none;
-  stroke: #8750f7;
+  stroke: var(--accent-2);
   stroke-width: 2;
   stroke-dasharray: 219.9;
   stroke-dashoffset: 219.9;
@@ -256,7 +256,7 @@ body::after {
   width: 322px;
   height: 308px;
   border-radius: 50%;
-  background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+  background: linear-gradient(260deg, var(--accent-2) 0%, rgba(115, 67, 210, 0) 100%);
   -webkit-filter: blur(150px);
   filter: blur(150px);
   margin-right: -5%;
@@ -414,7 +414,7 @@ header .header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
   box-sizing: border-box;
   padding: 16px 20px;
-  color: #fff;
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1.2px;
@@ -458,7 +458,7 @@ section.home .container::before {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+  background: linear-gradient(260deg, var(--accent-2) 0%, rgba(115, 67, 210, 0) 100%);
   -webkit-filter: blur(150px);
   filter: blur(150px);
   margin-left: -5%;
@@ -484,7 +484,7 @@ section.home .container::before {
 }
 
 .download-resume {
-  border: 1px solid #9000ff;
+  border: 1px solid var(--accent-1);
   height: 4rem;
   width: 15rem;
 }
@@ -494,7 +494,7 @@ section.home .container::before {
   height: 30rem;
   border-radius: 30px;
   transform: rotate(5deg);
-  border: 1px solid #2a1454;
+  border: 1px solid var(--accent-4);
   transition: all 0.5s ease;
   padding: 0.3rem;
 }
@@ -512,8 +512,8 @@ section.home .container::before {
   /* margin-left: 14rem; */
   font-size: 20rem;
   color: transparent;
-  -webkit-text-stroke: 2px #2a1454;
-  text-stroke: 2px #2a1454;
+  -webkit-text-stroke: 2px var(--accent-4);
+  text-stroke: 2px var(--accent-4);
   animation: 3s pulsrate infinite alternate ease-in-out;
 }
 
@@ -560,7 +560,7 @@ section.home .container::before {
   position: absolute;
   height: 0;
   width: 0;
-  background-color: #9000ff;
+  background-color: var(--accent-1);
   left: 50%;
   top: 50%;
   opacity: 0;
@@ -577,7 +577,7 @@ section.home .container::before {
 
 /* home section ends  */
 
-/* -------------------------------------------------------------------------------------------------------------------------------------------  */
+/* ------------------------------------------------------------------------------------------------------------------------------------  */
 
 /* services section starts  */
 section.services {
@@ -599,244 +599,9 @@ section.services {
   opacity: 0;
 }
 
-.service-h1-animUp {
-  animation: serviceHeadingUp 0.8s ease forwards;
-}
-
-@keyframes serviceHeadingUp {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.service-h1-animDown {
-  animation: serviceHeadingDown 0.8s ease forwards;
-}
-
-@keyframes serviceHeadingDown {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-/* servie p animation start*/
-.services .service-p {
-  transform: translateY(2rem);
-  opacity: 0;
-}
-
-.service-p-animUp {
-  animation: serviceHeadingUp 0.8s ease forwards;
-}
-
-@keyframes servicePUp {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.service-p-animDown {
-  animation: servicePDown 0.8s ease forwards;
-}
-
-@keyframes servicePDown {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-/* service body items animation  */
-
-/* servie item 1 animation  */
-.services .item:nth-child(2) {
-  transform: translateY(2rem);
-  opacity: 0;
-}
-
-.animUp1 {
-  animation: animUp1 1s ease forwards;
-}
-
-@keyframes animUp1 {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animDown1 {
-  animation: animDown1 1s ease forwards;
-}
-
-@keyframes animDown1 {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-/* end of first item anim  */
-
-/* Animation for service item 2 */
-.services .item:nth-child(3) {
-  transform: translateY(2rem);
-  opacity: 0;
-}
-
-.animUp2 {
-  animation: animUp2 1s ease forwards;
-}
-
-@keyframes animUp2 {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animDown2 {
-  animation: animDown2 1s ease forwards;
-}
-
-@keyframes animDown2 {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-/* end of item 2 */
-
-/* Animation for service item 3 */
-.services .item:nth-child(4) {
-  transform: translateY(2rem);
-  opacity: 0;
-}
-
-.animUp3 {
-  animation: animUp3 1s ease forwards;
-}
-
-@keyframes animUp3 {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animDown3 {
-  animation: animDown3 1s ease forwards;
-}
-
-@keyframes animDown3 {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-/* end of item 3  */
-
-/* Animation for service item 4 */
-.services .item:nth-child(5) {
-  transform: translateY(2rem);
-  opacity: 0;
-}
-
-.animUp4 {
-  animation: animUp4 1s ease forwards;
-}
-
-@keyframes animUp4 {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animDown4 {
-  animation: animDown4 1s ease forwards;
-}
-
-@keyframes animDown4 {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-/* end of item 4  */
-
-/* end of servie p animation  */
-
-
 .services .services-body .item {
   height: 8rem;
-  border-bottom: 1px solid #2a1454;
+  border-bottom: 1px solid var(--accent-4);
   cursor: pointer;
 }
 
@@ -853,7 +618,7 @@ section.services {
 .focuser {
   top: 0;
   height: 8rem;
-  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  background: var(--gradiant-1);
   transition: transform 0.5s ease;
 }
 
@@ -863,7 +628,7 @@ section.services {
 
 /* recent works section starts  */
 section.recent-works {
-  height: 210vh;
+  height: 240vh;
   background: var(--section-gradiant-1);
 }
 
@@ -884,16 +649,16 @@ section.recent-works {
 
 .recent-focuser {
   width: 25%;
-  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
+  background: var(--gradiant-1);
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .recent-body {
-  height: 82rem;
+  height: 83rem;
 }
 
 .recent-body .item {
-  background-color: #140c1c;
+  background-color: var(--accent-8);
   height: 0;
   width: 0;
 }
@@ -919,8 +684,8 @@ section.recent-works {
   width: 90%;
   bottom: -2rem;
   opacity: 0;
-  background: linear-gradient(to right, #8750f7 0%, var(--black-color) 100%);
-  transition: bottom 0.4s cubic-bezier(0.13, 0.25, 0.32, 1.03);
+  background: var(--gradiant-1);
+  transition: bottom 0.7s cubic-bezier(0.13, 0.25, 0.32, 1.03);
 }
 
 .recent-body .item .work-details a>span {
@@ -936,8 +701,8 @@ section.recent-works {
   height: 4rem;
   width: 4rem;
   background-color: rgb(34, 22, 68);
-  border: 2px solid #9000ff;
-  color: #9000ff;
+  border: 2px solid var(--accent-1);
+  color: var(--accent-1);
 }
 
 .toggle>span {
@@ -951,7 +716,7 @@ section.recent-works {
 /* resume section starts  */
 section.resume {
   height: 140vh;
-  background: linear-gradient(180deg, #0f0715 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(180deg, var(--accent-9) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
 }
 
 .experience-head>h1 {
@@ -965,12 +730,12 @@ section.resume {
 
 .experience-lists ul li {
   height: 10rem;
-  background: linear-gradient(to right, #140c1c 0%, #08040c 100%);
+  background: linear-gradient(to right, var(--accent-8) 0%, var(--accent-10) 100%);
   ;
 }
 
 .experience-lists ul li:hover {
-  background: linear-gradient(to right, var(--secondary-color) 0%, #1b0f27 100%);
+  background: linear-gradient(to right, var(--secondary-color) 0%, var(--accent-6) 100%);
   ;
 }
 
@@ -1003,7 +768,7 @@ section.skills {
 .skills .skills-body .item .logo {
   height: 14rem;
   width: 14rem;
-  background-color: #140c1c;
+  background-color: var(--accent-8);
 }
 
 .skills .skills-body .item .logo img {
@@ -1014,12 +779,12 @@ section.skills {
 }
 
 .skills .skills-body .item>p {
-  color: #8750f7;
+  color: var(--accent-2);
 }
 
 .skills .skills-body .item:hover .logo {
   background-color: #461c9a40;
-  border: 1px solid #8750f7;
+  border: 1px solid var(--accent-2);
 }
 
 .skills .skills-body .item:hover .logo img {
@@ -1038,7 +803,7 @@ section.contact {
 
 section.contact .contact-left {
   height: 50rem;
-  background-color: #1b1025;
+  background-color: var(--accent-7);
 }
 
 .contact-left h1 {
@@ -1048,7 +813,7 @@ section.contact .contact-left {
 textarea,
 input {
   background-color: rgb(19, 18, 20);
-  border: 1px solid #362547;
+  border: 1px solid var(--accent-5);
   color: white;
 }
 
@@ -1082,13 +847,13 @@ footer img {
 }
 
 footer .container>p {
-  color: #8750f7;
+  color: var(--accent-2);
 }
 
 .back-to-top {
   height: 4rem;
-  background: #1b1025;
-  background: linear-gradient(180deg, #1b1025 0%, rgb(20, 9, 29) 100%);
+  background: var(--accent-7);
+  background: linear-gradient(180deg, var(--accent-7) 0%, rgb(20, 9, 29) 100%);
   top: 5rem;
 }
 
