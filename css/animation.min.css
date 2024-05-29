@@ -1,0 +1,185 @@
+/* animation classes  */
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* up in animation */
+.upIn {
+    animation: upInAnim 0.6s ease forwards;
+}
+
+@keyframes upInAnim {
+    0% {
+        transform: translateY(-4rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* up out animation  */
+.upOut {
+    animation: upOutAnim 0.6s ease forwards;
+}
+
+
+@keyframes upOutAnim {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-4rem);
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* down in animation */
+.downIn {
+    animation: downInAnim 0.6s ease forwards;
+}
+
+@keyframes downInAnim {
+    0% {
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* down out animation */
+.downOut {
+    animation: downOutAnim 0.6s ease forwards;
+}
+
+@keyframes downOutAnim {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* right in animation */
+.rightIn {
+    animation: rightInAnim 0.6s ease forwards;
+}
+
+@keyframes rightInAnim {
+    0% {
+        transform: translateX(4rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* right out animation */
+.rightOut {
+    animation: rightOutAnim 0.6s ease forwards;
+}
+
+@keyframes rightOutAnim {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(4rem);
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* left in animation */
+.leftIn {
+    animation: leftInAnim 0.6s ease forwards;
+}
+
+@keyframes leftInAnim {
+    0% {
+        transform: translateX(-4rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* left out animation */
+.leftOut {
+    animation: leftOutAnim 0.6s ease forwards;
+}
+
+@keyframes leftOutAnim {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-4rem);
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* zoo in animation */
+.comeIn {
+    animation: comeInAnim 0.6s ease forwards;
+}
+
+@keyframes comeInAnim {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* zoom out animation */
+.goIn {
+    animation: goInAnim 0.6s ease forwards;
+}
+
+@keyframes goInAnim {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* animation classes ends  */

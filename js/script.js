@@ -230,6 +230,28 @@ const windowObserver = new IntersectionObserver((entries) => {
                 entry.target.classList.add('countAnimFast');
             }
         }
+
+        // zoom in animation 
+        else if (entry.target.classList.contains('zoomIn')) {
+            if (entry.isIntersecting) {
+                // entry.target.classList.remove('comeOut');
+                entry.target.classList.add('comeIn');
+            } else {
+                entry.target.classList.remove('comeIn');
+                // entry.target.classList.add('comeOut');
+            }
+        }
+
+        // zoom in animation 
+        else if (entry.target.classList.contains('zoomOut')) {
+            if (entry.isIntersecting) {
+                // entry.target.classList.remove('comeOut');
+                entry.target.classList.add('goIn');
+            } else {
+                entry.target.classList.remove('goIn');
+                // entry.target.classList.add('comeOut');
+            }
+        }
     });
 });
 
@@ -264,6 +286,17 @@ const counterFast = document.querySelectorAll('.countFast');
 counterFast.forEach(element => {
     windowObserver.observe(element);
 });
+
+const zoomIn = document.querySelectorAll('.zoomIn');
+zoomIn.forEach(element => {
+    windowObserver.observe(element);
+});
+
+const zoomOut = document.querySelectorAll('.zoomOut');
+zoomOut.forEach(element => {
+    windowObserver.observe(element);
+});
+
 
 // --------------------------------------------------------------------------------------------------------
 
