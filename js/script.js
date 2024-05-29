@@ -28,7 +28,18 @@ window.addEventListener('scroll', function () {
     var scrollY = window.scrollY || window.pageYOffset;
 
     // log 
-    // console.log(scrollY);
+    console.log(scrollY);
+
+    if (scrollY >= 890 || scrollY < 70) {
+        document.querySelectorAll('.countSlow').forEach(function (element) {
+            element.classList.remove('countAnimSlow');
+        });
+        document.querySelectorAll('.countFast').forEach(function (element) {
+            element.classList.remove('countAnimFast');
+        });
+        console.log("removed");
+    }
+    
 
     // custom circle scrollbae animation 
     if (scrollY >= 910) {
@@ -42,7 +53,7 @@ window.addEventListener('scroll', function () {
     // -----------------------------------------------------------------------------------------------------------------------------------------
 
     // animated header animation 
-    if (scrollY >= 910) {
+    if (scrollY >= 890) {
         document.querySelector('.animated-header').classList.remove('headerOut');
         document.querySelector('.animated-header').classList.add('headerIn');
     } else {
@@ -51,7 +62,7 @@ window.addEventListener('scroll', function () {
     }
 
     // -------------------------------------------------------------------------------------------------------------------------------------- 
-    
+
     // servie body focuser animation 
     let focuser = document.querySelector('.focuser');
 
@@ -161,7 +172,7 @@ document.addEventListener('scroll', function () {
 // All window scroll animation
 const windowObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        
+
         // Move up animation 
         if (entry.target.classList.contains('moveUp')) {
             if (entry.isIntersecting) {
@@ -171,8 +182,8 @@ const windowObserver = new IntersectionObserver((entries) => {
                 entry.target.classList.remove('downIn');
                 entry.target.classList.add('downOut');
             }
-        } 
-        
+        }
+
         // Move down animation 
         else if (entry.target.classList.contains('moveDown')) {
             if (entry.isIntersecting) {
@@ -183,7 +194,7 @@ const windowObserver = new IntersectionObserver((entries) => {
                 entry.target.classList.add('upOut');
             }
         }
-        
+
         // Move right animation 
         else if (entry.target.classList.contains('moveRight')) {
             if (entry.isIntersecting) {
@@ -194,7 +205,7 @@ const windowObserver = new IntersectionObserver((entries) => {
                 entry.target.classList.add('leftOut');
             }
         }
-        
+
         // Move left animation 
         else if (entry.target.classList.contains('moveLeft')) {
             if (entry.isIntersecting) {
@@ -203,6 +214,20 @@ const windowObserver = new IntersectionObserver((entries) => {
             } else {
                 entry.target.classList.remove('rightIn');
                 entry.target.classList.add('rightOut');
+            }
+        }
+
+        // counter animation slow 
+        else if (entry.target.classList.contains('countSlow')) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('countAnimSlow');
+            }
+        }
+
+        // counter animation slow 
+        else if (entry.target.classList.contains('countFast')) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('countAnimFast');
             }
         }
     });
@@ -228,6 +253,19 @@ const moveRight = document.querySelectorAll('.moveRight');
 moveRight.forEach(element => {
     windowObserver.observe(element);
 });
+
+// counter animation 
+const counterSlow = document.querySelectorAll('.countSlow');
+counterSlow.forEach(element => {
+    windowObserver.observe(element);
+});
+
+const counterFast = document.querySelectorAll('.countFast');
+counterFast.forEach(element => {
+    windowObserver.observe(element);
+});
+
+// --------------------------------------------------------------------------------------------------------
 
 // recent works section all corousle item prev and next action listner function
 
@@ -303,7 +341,7 @@ function brandingNext() {
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // header ul li focuser animation while click  
-document.querySelector('.nav-home').addEventListener('click', function() {
+document.querySelector('.nav-home').addEventListener('click', function () {
     document.querySelector('.home-focuser').style.opacity = '1';
     document.querySelector('.service-focuser').style.opacity = '0';
     document.querySelector('.works-focuser').style.opacity = '0';
@@ -313,7 +351,7 @@ document.querySelector('.nav-home').addEventListener('click', function() {
 });
 
 
-document.querySelector('.nav-service').addEventListener('click', function() {
+document.querySelector('.nav-service').addEventListener('click', function () {
     document.querySelector('.service-focuser').style.opacity = '1';
     document.querySelector('.home-focuser').style.opacity = '0';
     document.querySelector('.works-focuser').style.opacity = '0';
@@ -322,7 +360,7 @@ document.querySelector('.nav-service').addEventListener('click', function() {
     document.querySelector('.contact-focuser').style.opacity = '0';
 });
 
-document.querySelector('.nav-works').addEventListener('click', function() {
+document.querySelector('.nav-works').addEventListener('click', function () {
     document.querySelector('.works-focuser').style.opacity = '1';
     document.querySelector('.service-focuser').style.opacity = '0';
     document.querySelector('.home-focuser').style.opacity = '0';
@@ -332,7 +370,7 @@ document.querySelector('.nav-works').addEventListener('click', function() {
 });
 
 
-document.querySelector('.nav-resume').addEventListener('click', function() {
+document.querySelector('.nav-resume').addEventListener('click', function () {
     document.querySelector('.resume-focuser').style.opacity = '1';
     document.querySelector('.skills-focuser').style.opacity = '0';
     document.querySelector('.service-focuser').style.opacity = '0';
@@ -341,7 +379,7 @@ document.querySelector('.nav-resume').addEventListener('click', function() {
     document.querySelector('.contact-focuser').style.opacity = '0';
 });
 
-document.querySelector('.nav-skills').addEventListener('click', function() {
+document.querySelector('.nav-skills').addEventListener('click', function () {
     document.querySelector('.skills-focuser').style.opacity = '1';
     document.querySelector('.service-focuser').style.opacity = '0';
     document.querySelector('.home-focuser').style.opacity = '0';
@@ -351,7 +389,7 @@ document.querySelector('.nav-skills').addEventListener('click', function() {
 });
 
 
-document.querySelector('.nav-contact').addEventListener('click', function() {
+document.querySelector('.nav-contact').addEventListener('click', function () {
     document.querySelector('.contact-focuser').style.opacity = '1';
     document.querySelector('.service-focuser').style.opacity = '0';
     document.querySelector('.home-focuser').style.opacity = '0';
@@ -379,7 +417,6 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.home-focuser').style.display = 'none';
         } else {
             document.querySelector(focuserSelector).style.opacity = '0';
-            console.log("Not in the section");
         }
     }
 
@@ -406,6 +443,7 @@ document.addEventListener('DOMContentLoaded', function () {
     contactObserver.observe(contactSection);
 });
 // nav ul focuser aniamtion while scrolling ends
+
 
 
 

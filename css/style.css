@@ -575,6 +575,39 @@ section.home .container::before {
   width: 100%;
 }
 
+.counter {
+  height: 7rem;
+  width: 3rem;
+}
+
+.countAnimFast {
+  animation: counterAnimFast 1.3s cubic-bezier(0.755, 0.45, 0.955, 0.26) forwards;
+}
+
+@keyframes counterAnimFast {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1400%);
+  }
+}
+
+.countAnimSlow {
+  animation: counterAnimSlow 1.6s cubic-bezier(0.785, 0.65, 0.655, 0.06) forwards;
+}
+
+@keyframes counterAnimSlow {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1100%);
+  }
+}
+
 /* home section ends  */
 
 /* ------------------------------------------------------------------------------------------------------------------------------------  */
