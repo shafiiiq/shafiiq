@@ -1,0 +1,375 @@
+@media (max-width:1191px) {
+    body::-webkit-scrollbar {
+        display: none;
+      }
+
+      body {
+        width: 100%;
+      }
+
+      section {
+        width: 100%;
+      }
+      
+    .p-inline-6 {
+        padding-inline: 2rem;
+    }
+    .font-md {
+        font-size: 18px;
+    }
+    .font-sm {
+        font-size: 15px;
+    }
+
+    header {
+        display: none;
+    }
+
+    /* home section  */
+    .home-summary .details .item>h1 {
+        font-size: 56px;
+    }
+
+    section#home {
+        padding-top: 1rem;
+        height: 110vh;
+    }
+
+    .home-summary .details .item > span {
+        font-size: 15px;
+    }
+
+    .home-left .name {
+        font-size: 25px;
+    }
+
+    .home-left .decription {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    section#home .home-wrapper {
+        flex-direction: column;
+    }
+
+    .role-of-me {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .home-left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .home-right {
+        display: none;
+        width: 100%;
+    }
+
+    .home-text-anim {
+        display: none;
+    }
+
+    .home-right .img-wrapper {
+        transform: translate(0);
+    }
+
+    .home-summary {
+        margin-top: 3rem;
+    }
+
+    .home-summary .details {
+        padding-right: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-summary .details .item  {
+        gap: 0.5rem;
+    }
+
+    .home-summary .counter {
+        height: 5rem;
+        width: 2.5rem;
+    }
+
+    .name {
+        font-size: 23px;
+    }
+
+    /* service section  */
+    section.services {
+        height: 130vh;
+    }
+
+    .use {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .h1 {
+        font-size: 35px;
+    }
+
+    .services .services-head>h1 {
+        font-size: 35px;
+    }
+
+    /* recent works section  */
+    section.recent-works {
+        height: 260vh;
+    }
+
+    .all {
+        padding-inline: 4rem;
+    }
+
+    .recent-works .pt-7 {
+        padding-top: 0;
+    }
+
+    .recent-works .recent-head h1 {
+        font-size: 35px;
+    }
+
+    .recent-works .container {
+        padding-inline: 0;
+    }
+
+    .all-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recent-body {
+        height: 98rem;
+    }
+
+    @keyframes recentAnim {
+        0% {
+            height: 0;
+            width: 0%;
+        }
+
+        100% {
+            height: 30rem;
+            width: 100%;
+        }
+    }
+
+    /* section resume  */
+    section.resume {
+        height: 250vh;
+    }
+
+    .experience-head>h1 {
+        font-size: 35px;
+    }
+
+    .resume .contaienr {
+        flex-direction: column;
+    }
+
+    .resume .contaienr .experience {
+        width: 100%;
+    }
+
+    .resume .contaienr .experience:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .resume .contaienr .experience .experience-head {
+        justify-content: center;
+    }
+
+    .experience .experience-head h1 {
+        font-size: 35px;
+    }
+
+    .experience-lists ul li .role {
+        font-size: 27px;
+    }
+
+
+
+    /* section skills  */
+
+    section.skills {
+        height: 140vh !important;
+    }
+
+    .skills .skills-head>h1 {
+        font-size: 35px;
+    }
+
+    /* contact section  */
+
+    section.contact .container {
+        flex-direction: column;
+    }
+
+    .contact .container .contact-left {
+        width: 100%;
+    }
+
+    .contact .container .contact-right {
+        width: 100%;
+    }
+
+    .contact-left.p-inline-3 {
+        padding-inline: 2rem;
+    }
+
+    
+    .contact-left h1 {
+        font-size: 35px;
+    }
+
+    .contact-left p {
+        text-align: center;
+    }
+
+    input {
+        height: 3rem;
+    }
+
+    section.contact .contact-left {
+        height: 40rem;
+    }
+
+    textarea {
+        height: 6.5rem;
+    }
+
+    input[type="submit"] {
+        margin-top: 2rem;
+      }
+
+      section.contact .contact-right {
+        margin-top: 4rem;
+      }
+}
+
+
+
+@media (max-width:850px) {
+
+    section#home {
+        height: 110vh !important;
+    }
+    section.services {
+        height: 130vh !important;
+    }
+    section.recent-works {
+        height: 260vh !important;
+    }
+    section.resume {
+        height: 250vh;
+    }
+
+    section.skills {
+        height: 190vh !important;
+        /* background-color: blue; */
+    }
+
+    .recent-head .recent-navs {
+        width: 24rem;
+    }
+}
+
+/* hi  */
+
+@media (max-width:480px) {
+    .font-sm {
+        font-size: 12px;
+    }
+
+    .role-of-me {
+        font-size: 40px;
+        line-height: 3rem;
+    }
+
+    .download-resume {
+        width: 10.5rem;
+    }
+
+    .home-summary .details .item  {
+        padding-right: 1rem;
+        gap: 0.3rem;
+    }
+
+    .home-summary {
+        margin-top: 7rem;
+    }
+
+    .home-summary .details {
+        padding-right: 0;
+    }
+
+    .home-summary .details .item>h1 {
+        font-size: 46px;
+    }
+
+    .home-summary .counter {
+        width: 2rem;
+        height: 4.08rem;
+    }
+
+    section#home {
+        height: 80vh !important;
+    }
+    section.services {
+        height: 130vh !important;
+    }
+    section.recent-works {
+        height: 260vh !important;
+    }
+    section.resume {
+        height: 250vh;
+    }
+
+    section.skills {
+        height: 360vh !important;
+        /* background-color: blue; */
+    }
+
+    .recent-head .recent-navs {
+        width: 20rem;
+    }
+
+    .h1 {
+        font-size: 27px;
+    }
+
+    .services .services-head>h1 {
+        font-size: 27px;
+    }
+
+    .recent-works .recent-head h1 {
+        font-size: 27px;
+    }
+    .experience .experience-head h1  {
+        font-size: 27px;
+    }
+    .skills .skills-head>h1 {
+        font-size: 27px;
+    }
+    .contact-left h1 {
+        font-size: 27px;
+    }
+
+    .contact-right {
+        padding-inline: 1rem;
+    }
+
+    .font-md {
+        font-size: 15px;
+    }
+
+    .experience-lists ul li .year {
+        font-size: 17px;
+    }
+
+    .experience-lists ul li .role {
+        font-size: 24px;
+    }
+}

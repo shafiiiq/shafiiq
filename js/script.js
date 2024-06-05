@@ -27,9 +27,6 @@ document.getElementById('hover-4').addEventListener('mouseenter', function () {
 window.addEventListener('scroll', function () {
     var scrollY = window.scrollY || window.pageYOffset;
 
-    // log 
-    console.log(scrollY);
-
     if (scrollY >= 890 || scrollY < 70) {
         document.querySelectorAll('.countSlow').forEach(function (element) {
             element.classList.remove('countAnimSlow');
@@ -37,7 +34,6 @@ window.addEventListener('scroll', function () {
         document.querySelectorAll('.countFast').forEach(function (element) {
             element.classList.remove('countAnimFast');
         });
-        console.log("removed");
     }
     
 
@@ -83,15 +79,36 @@ window.addEventListener('scroll', function () {
     // starts the my works section 
 
     // animation for recent works items 
-    if (scrollY >= 1780) {
-        document.querySelectorAll('.recent-works .item').forEach(function (element) {
-            element.classList.add('recent-anim');
-        });
-    } else if (scrollY <= 1660) {
-        document.querySelectorAll('.recent-works .item').forEach(function (element) {
-            element.classList.remove('recent-anim');
-        });
+    function observeMedia(entry) {
+        if(entry.matches) {
+            if (scrollY >= 1680) {
+                document.querySelectorAll('.recent-works .item').forEach(function (element) {
+                    element.classList.add('recent-anim');
+                });
+            } else if (scrollY <= 1760) {
+                document.querySelectorAll('.recent-works .item').forEach(function (element) {
+                    element.classList.remove('recent-anim');
+                });
+            }
+        } else {
+            if (scrollY >= 1780) {
+                document.querySelectorAll('.recent-works .item').forEach(function (element) {
+                    element.classList.add('recent-anim');
+                });
+            } else if (scrollY <= 1660) {
+                document.querySelectorAll('.recent-works .item').forEach(function (element) {
+                    element.classList.remove('recent-anim');
+                });
+            }
+        }
     }
+
+    var entry = window.matchMedia("(max-width:1991px)")
+
+    observeMedia(entry);
+    entry.addEventListener("change", function() {
+        observeMedia(entry)
+    })
     // end of the recent works section 
 });
 // end of the window scroll detection for animation 
@@ -361,7 +378,6 @@ function brandingPrev() {
 }
 
 function brandingNext() {
-    console.log("Next called");
     const sliderItemWidth = brandingSliderItems[0].offsetWidth + brandingGap;
     brandingCurrentIndex = (brandingCurrentIndex + 1) % brandingSliderItems.length;
     const offset = -brandingCurrentIndex * sliderItemWidth;

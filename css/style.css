@@ -472,6 +472,7 @@ section.home .container::before {
 
 /* services section starts  */
 section.services {
+  height: 130vh;
   background: var(--section-gradiant-2);
 }
 
@@ -688,7 +689,7 @@ section.skills {
 
 /* contact section starts  */
 section.contact {
-  height: 140vh;
+  height: 170vh;
   background: var(--section-gradiant-2);
 }
 
