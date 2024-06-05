@@ -375,19 +375,19 @@
     }
 
     section.services {
-        height: 176vh !important;
+        height: 166vh !important;
     }
 
     section.recent-works {
-        height: 230vh !important;
+        height: 220vh !important;
     }
 
     section.resume {
-        height: 220vh;
+        height: 210vh;
     }
 
     section.skills {
-        height: 360vh !important;
+        height: 340vh !important;
         /* background-color: blue; */
     }
 
