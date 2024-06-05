@@ -1,22 +1,61 @@
-// for service section 
+function observeMediaQuery(comes) {
+    console.log(comes);
+    if (comes.matches) {
+        console.log("yes");
+        // for service section 
 
-// services item hover animation 
-document.getElementById('hover-1').addEventListener('mouseenter', function () {
-    document.querySelector('.focuser').style.transform = "translateY(0)";
-})
+        // services item hover animation 
+        document.getElementById('hover-1').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(0)";
+        })
 
-document.getElementById('hover-2').addEventListener('mouseenter', function () {
-    document.querySelector('.focuser').style.transform = "translateY(8rem)";
-})
+        document.getElementById('hover-2').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(10rem)";
+        })
 
-document.getElementById('hover-3').addEventListener('mouseenter', function () {
-    document.querySelector('.focuser').style.transform = "translateY(16rem)";
-    document.querySelector('.sl').style.color = "var(--white-clr)";
-})
+        document.getElementById('hover-3').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(20rem)";
+            document.querySelector('.sl').style.color = "var(--white-clr)";
+        })
 
-document.getElementById('hover-4').addEventListener('mouseenter', function () {
-    document.querySelector('.focuser').style.transform = "translateY(24rem)";
-    document.querySelector('.sl').style.color = "var(--white-clr)";
+        document.getElementById('hover-4').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(30rem)";
+            document.querySelector('.sl').style.color = "var(--white-clr)";
+        })
+
+
+    } else {
+        console.log("no");
+        // for service section 
+
+        // services item hover animation 
+        document.getElementById('hover-1').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(0)";
+        })
+
+        document.getElementById('hover-2').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(8rem)";
+        })
+
+        document.getElementById('hover-3').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(16rem)";
+            document.querySelector('.sl').style.color = "var(--white-clr)";
+        })
+
+        document.getElementById('hover-4').addEventListener('mouseenter', function () {
+            document.querySelector('.focuser').style.transform = "translateY(24rem)";
+            document.querySelector('.sl').style.color = "var(--white-clr)";
+        })
+
+    }
+}
+
+var comes = window.matchMedia("(max-width: 700px)")
+
+
+observeMediaQuery(comes);
+comes.addEventListener("change", function () {
+    observeMediaQuery(comes)
 })
 // end of the service section 
 
@@ -35,7 +74,7 @@ window.addEventListener('scroll', function () {
             element.classList.remove('countAnimFast');
         });
     }
-    
+
 
     // custom circle scrollbae animation 
     if (scrollY >= 910) {
@@ -62,15 +101,37 @@ window.addEventListener('scroll', function () {
     // servie body focuser animation 
     let focuser = document.querySelector('.focuser');
 
-    if (scrollY < 787 || scrollY > 1500) {
-        focuser.style.transform = "translateY(0)";
-    } else if (scrollY > 877 && scrollY < 1000) {
-        focuser.style.transform = "translateY(8rem)";
-    } else if (scrollY > 1000 && scrollY < 1400) {
-        focuser.style.transform = "translateY(16rem)";
-    } else if (scrollY > 1400) {
-        focuser.style.transform = "translateY(24rem)";
+    function observeChange(changes) {
+        if (changes.matches) {
+            if (scrollY < 787 || scrollY > 1300) {
+                focuser.style.transform = "translateY(0)";
+            } else if (scrollY > 877 && scrollY < 1000) {
+                focuser.style.transform = "translateY(10rem)";
+            } else if (scrollY > 1000 && scrollY < 1100) {
+                focuser.style.transform = "translateY(20rem)";
+            } else if (scrollY > 1100) {
+                focuser.style.transform = "translateY(30rem)";
+            }
+        } else {
+            if (scrollY < 787 || scrollY > 1500) {
+                focuser.style.transform = "translateY(0)";
+            } else if (scrollY > 877 && scrollY < 1000) {
+                focuser.style.transform = "translateY(8rem)";
+            } else if (scrollY > 1000 && scrollY < 1400) {
+                focuser.style.transform = "translateY(16rem)";
+            } else if (scrollY > 1400) {
+                focuser.style.transform = "translateY(24rem)";
+            }
+        }
     }
+
+    var changes = window.matchMedia("(max-width: 700px)")
+    observeChange(changes);
+
+    changes.addEventListener("change", function() {
+        observeChange(changes)
+    })
+
 
     // end of the service section 
 
@@ -80,8 +141,8 @@ window.addEventListener('scroll', function () {
 
     // animation for recent works items 
     function observeMedia(entry) {
-        if(entry.matches) {
-            if (scrollY >= 1680) {
+        if (entry.matches) {
+            if (scrollY >= 1380) {
                 document.querySelectorAll('.recent-works .item').forEach(function (element) {
                     element.classList.add('recent-anim');
                 });
@@ -103,10 +164,11 @@ window.addEventListener('scroll', function () {
         }
     }
 
-    var entry = window.matchMedia("(max-width:1991px)")
+    var entry = window.matchMedia("(max-width: 900px)")
+
 
     observeMedia(entry);
-    entry.addEventListener("change", function() {
+    entry.addEventListener("change", function () {
         observeMedia(entry)
     })
     // end of the recent works section 
