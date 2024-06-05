@@ -99,6 +99,7 @@ svg {
 
 /* body styles  */
 body {
+  width: 100%;
   overflow-x: hidden;
   position: relative;
   height: 100vh;
@@ -135,6 +136,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* body styles end  */
+
+section {
+  width: 100%;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ *
 
