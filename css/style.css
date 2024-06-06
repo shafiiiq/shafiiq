@@ -59,6 +59,9 @@
   width: 70px;
   height: 70px;
   margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -771,3 +774,4 @@ footer .container>p {
 
 
 /* -----------------------------------------  ended the shafiiq portfolio css design succesfully ------------------------------------------- */
+

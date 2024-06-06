@@ -287,9 +287,11 @@
     *::-webkit-scrollbar {
         display: none;
     }
+
     .container {
         overflow-x: hidden;
     }
+
     header {
         display: flex;
         height: 4rem;
@@ -396,18 +398,18 @@
     }
 
     .services .container.pt-9 {
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
- 
+
     .resume .contaienr.pt-8 {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     .skills .container {
         overflow: hidden;
         padding-top: 2rem;
     }
-    
+
     .skills .container.pt-6 {
         padding-top: 2rem;
     }
@@ -434,7 +436,9 @@
         padding-top: 2rem;
     }
 
-    .recent-body, .recent-body .all, .recent-body .ux.ui {
+    .recent-body,
+    .recent-body .all,
+    .recent-body .ux.ui {
         overflow: hidden;
     }
 
@@ -453,14 +457,31 @@
     .circle-container {
         width: 40px;
         height: 40px;
-    }
+      }
+      
+      .circle {
+        width: 40px;
+        height: 40px;
+      }
+
+      .circle-container>span {
+        font-size: 20px;
+      }
+
+      .circle-wrapper {
+        position: fixed;
+        bottom: -1rem;
+        right: 1rem;
+        opacity: 0;
+      }
+      
 
     section.resume {
-        height: 225vh;
+        height: 215vh;
     }
 
     section.skills {
-        height: 333vh !important;
+        height: 340vh !important;
         /* background-color: blue; */
     }
 
@@ -470,6 +491,10 @@
 
     .h1 {
         font-size: 27px;
+    }
+
+    section.contact .container{
+        padding-top: 3.5rem;
     }
 
     .services .services-head>h1 {
@@ -574,4 +599,28 @@
     .services .services-body .link span {
         font-size: 30px;
     }
+
+    /* section.home {
+        background-color: rgb(229, 133, 133);
+    }
+
+    section.services {
+        background: green;
+    }
+
+    section.recent-works {
+        background: rgb(148, 148, 64);
+    }
+
+    section.resume {
+        background: rgb(107, 107, 46);
+    }
+
+    section.skills {
+        background: rgb(95, 43, 95);
+    }
+
+    section.contact {
+        background: rgb(32, 32, 131);
+    } */
 }
