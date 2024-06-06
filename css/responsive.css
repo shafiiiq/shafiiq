@@ -421,11 +421,21 @@
     }
 
     .recent-works .container {
-        padding-top: 2rem;
+        overflow: hidden;
+        /* background-color: rgb(164, 95, 95); */
+    }
+
+    .recent-works .container .recent-head {
+        padding-top: 0;
+        margin-top: -2rem;
     }
 
     .recent-works .container.pt-7 {
         padding-top: 2rem;
+    }
+
+    .recent-body, .recent-body .all, .recent-body .ux.ui {
+        overflow: hidden;
     }
 
     .anim-header img {
@@ -433,11 +443,16 @@
     }
 
     section.services {
-        height: 166vh !important;
+        height: 156vh !important;
     }
 
     section.recent-works {
-        height: 210vh !important;
+        height: 250vh !important;
+    }
+
+    .circle-container {
+        width: 40px;
+        height: 40px;
     }
 
     section.resume {
@@ -548,5 +563,15 @@
 
     footer p {
         text-align: center;
+    }
+
+    .services .services-body .link {
+        position: absolute;
+        right: 1rem;
+        top: 2.6rem;
+    }
+
+    .services .services-body .link span {
+        font-size: 30px;
     }
 }

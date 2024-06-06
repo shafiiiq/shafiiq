@@ -529,6 +529,10 @@ section.recent-works {
   background: var(--section-gradiant-1);
 }
 
+.recent-works .container {
+  overflow: hidden;
+}
+
 .recent-works .recent-head h1 {
   font-size: 54px;
   opacity: 0;
