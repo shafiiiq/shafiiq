@@ -264,8 +264,12 @@
 
 
 /* -------------------------------------------------------- */
-
+/* mobile screen  */
 @media screen and (max-width:768px) {
+
+    .p-inline-6 {
+        padding-inline: 1rem;
+    }
 
     /* home section starts  */
     section.home {
@@ -277,12 +281,12 @@
     }
 
     .home-left .role-of-me {
-        font-size: 40px;
-        line-height: 2.4rem;
+        font-size: 34px;
+        line-height: 2.2rem;
     }
 
     .home-left .name {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .proffesional-profiles {
@@ -355,6 +359,14 @@
         height: 10rem;
     }
 
+    .services .services-body .item {
+        position: relative;
+    }
+
+    .services .services-body .link span {
+        position: absolute;
+    }
+
     /* service section ends  */
     section.recent-works {
         height: 100vh;
@@ -417,6 +429,14 @@
 
     .experience-lists ul li {
         height: 8rem;
+    }
+
+    .experience-head>span {
+        font-size: 34px;
+    }
+
+    .experience.p-inline-2 {
+        padding-inline: 0;
     }
     /* resume section ends  */
 

@@ -11,6 +11,10 @@
   line-height: 5.5rem;
 }
 
+.container {
+  overflow: hidden;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* cicle scroll bar custom  */
@@ -709,6 +713,10 @@ input {
 
 input {
   height: 3.5rem;
+}
+
+.send-btn {
+  width: 50%;
 }
 
 input[type="submit"] {
