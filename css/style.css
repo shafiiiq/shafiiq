@@ -158,6 +158,10 @@ header.animated-header {
   overflow: hidden;
 }
 
+.menu-btn {
+  display: none;
+}
+
 /* animated header animation  */
 .headerIn {
   animation: headerIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -264,6 +268,7 @@ header .header {
     width: 0;
   }
 }
+
 /* header li hover animation  ends */
 
 
@@ -512,7 +517,6 @@ section.services {
 section.recent-works {
   height: 255vh;
   background: var(--section-gradiant-1);
-  /* background-color: green; */
 }
 
 .recent-works .container {
@@ -522,7 +526,7 @@ section.recent-works {
 .recent-head .recent-navs {
   height: 4rem;
   width: 28rem;
-  background-color: rgb(13, 13, 14);
+  background-color: rgb(28, 28, 30);
 }
 
 .recent-head .recent-navs li {
@@ -536,13 +540,17 @@ section.recent-works {
 }
 
 .recent-body {
-  height: 83rem;
+  height: 77rem;
 }
 
 .recent-body .item {
-  background-color: var(--accent-8);
+  background-color: var(--accent-6);
   height: 0;
   width: 0;
+}
+
+.recent-body .item img {
+  border: 2px solid var(--accent-5);
 }
 
 .recent-anim {
@@ -556,7 +564,7 @@ section.recent-works {
   }
 
   100% {
-    height: 40rem;
+    height: 100%;
     width: 100%;
   }
 }
@@ -591,6 +599,17 @@ section.recent-works {
   font-size: 34px;
 }
 
+.slider-item {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.slider-container {
+  grid-auto-flow: column;
+  grid-auto-columns: 45%;
+}
+
 /* recent works section ends  */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -598,8 +617,7 @@ section.recent-works {
 /* resume section starts  */
 section.resume {
   height: 145vh;
-  /* background: linear-gradient(180deg, var(--accent-9) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%); */
-  background-color: blueviolet;
+  background: linear-gradient(180deg, var(--accent-9) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
 }
 
 .experience-head>span {
@@ -633,8 +651,7 @@ section.resume {
 /* skills section start  */
 section.skills {
   height: 130vh;
-  /* background: var(--section-gradiant-1); */
-  background-color: green;
+  background: var(--section-gradiant-1);
 }
 
 
@@ -675,8 +692,7 @@ section.skills {
 /* contact section starts  */
 section.contact {
   height: 140vh;
-  /* background: var(--section-gradiant-2); */
-  background-color: blueviolet;
+  background: var(--section-gradiant-2);
 }
 
 section.contact .contact-left {
@@ -744,4 +760,3 @@ footer .container>p {
 
 
 /* -----------------------------------------  ended the shafiiq portfolio css design succesfully ------------------------------------------- */
-

@@ -10,16 +10,16 @@ function observeMediaQuery(comes) {
         })
 
         document.getElementById('hover-2').addEventListener('mouseenter', function () {
-            document.querySelector('.focuser').style.transform = "translateY(13rem)";
+            document.querySelector('.focuser').style.transform = "translateY(10rem)";
         })
 
         document.getElementById('hover-3').addEventListener('mouseenter', function () {
-            document.querySelector('.focuser').style.transform = "translateY(26rem)";
+            document.querySelector('.focuser').style.transform = "translateY(20rem)";
             document.querySelector('.sl').style.color = "var(--white-clr)";
         })
 
         document.getElementById('hover-4').addEventListener('mouseenter', function () {
-            document.querySelector('.focuser').style.transform = "translateY(39rem)";
+            document.querySelector('.focuser').style.transform = "translateY(30rem)";
             document.querySelector('.sl').style.color = "var(--white-clr)";
         })
 
@@ -106,11 +106,11 @@ window.addEventListener('scroll', function () {
             if (scrollY < 787 || scrollY > 1300) {
                 focuser.style.transform = "translateY(0)";
             } else if (scrollY > 877 && scrollY < 1000) {
-                focuser.style.transform = "translateY(13rem)";
+                focuser.style.transform = "translateY(10rem)";
             } else if (scrollY > 1000 && scrollY < 1100) {
-                focuser.style.transform = "translateY(26rem)";
+                focuser.style.transform = "translateY(20rem)";
             } else if (scrollY > 1100) {
-                focuser.style.transform = "translateY(39rem)";
+                focuser.style.transform = "translateY(30rem)";
             }
         } else {
             if (scrollY < 787 || scrollY > 1500) {

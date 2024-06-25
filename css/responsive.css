@@ -1,7 +1,11 @@
 @media screen and (max-width:992px) {
 
-    /* header section  */
+    /* common  */
+    .p-inline-6 {
+        padding-inline: 3rem;
+    }
 
+    /* header section  */
     .animated-header {
         display: none;
     }
@@ -10,12 +14,8 @@
         height: 5rem;
     }
 
-    .p-inline-6 {
-        padding-inline: 3rem;
-    }
-
     .logo img {
-        width: 5rem;
+        width: 7rem;
     }
 
     .hire-btn {
@@ -25,7 +25,7 @@
     .navigations {
         display: none;
     }
-    
+
     header#header span {
         display: flex;
         font-size: 40px;
@@ -44,7 +44,7 @@
         gap: 3rem;
     }
 
-    .home-text-anim  {
+    .home-text-anim {
         display: none;
     }
 
@@ -56,7 +56,7 @@
         width: 100%;
     }
 
-    .home-left.j-center  {
+    .home-left.j-center {
         align-items: center;
     }
 
@@ -95,6 +95,7 @@
         gap: 0.5rem;
     }
 
+    /* service section starts  */
     .font-sm {
         font-size: 14px;
     }
@@ -122,7 +123,399 @@
     .services .services-body .link span {
         font-size: 30px;
     }
+
     /* service section ends  */
 
-    
+    section.recent-works {
+        height: 160vh;
+    }
+
+    section.recent-works .container {
+        padding-top: 2rem;
+    }
+
+    .recent-body {
+        height: 50rem;
+    }
+
+    /* recent works section ends  */
+
+    section.resume {
+        height: 230vh;
+    }
+
+    section.resume .container {
+        flex-direction: column;
+        padding-top: 2rem;
+        gap: 6rem;
+
+    }
+
+    section.resume .container .w-half {
+        width: 100%;
+    }
+
+    .experience-head.j-start {
+        justify-content: center;
+    }
+
+    .experience-lists ul li .year {
+        font-size: 23px;
+    }
+
+    .experience-lists ul li .role {
+        font-size: 26px;
+    }
+
+    /* experience section ends  */
+
+    /* skills section starts  */
+    section.skills {
+        height: 102vh;
+    }
+
+    section.skills .container.pt-6 {
+        padding-top: 2rem;
+    }
+
+    .skills .skills-body .item .logo {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .skills .skills-body .item .logo img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: cover;
+        filter: saturate(0.2);
+    }
+
+    /* skills section ends  */
+
+    /* contact section starts  */
+    section.contact .container {
+        flex-direction: column;
+        padding-inline: 7rem;
+        gap: 3rem;
+    }
+
+    section.contact .container.pt-10 {
+        padding-top: 4rem;
+    }
+
+    section.contact .container .w-half {
+        width: 100%;
+    }
+
+    section.contact .contact-left {
+        height: 36rem;
+        text-align: center;
+    }
+
+    input {
+        height: 3rem;
+    }
+
+    textarea {
+        height: 5rem;
+    }
+
+    .send-btn {
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+    /* contact section ends  */
+
+    /* footer section starts  */
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-logo {
+        width: 7rem;
+    }
+
+    /* footer ends  */
+
+    /* cicle scroll bar custom  */
+    .circle-wrapper {
+        right: 1.2rem;
+    }
+
+    .circle-container>span {
+        font-size: 25px;
+    }
+
+    .circle-container {
+        width: 48px;
+        height: 48px;
+    }
+
+    .circle {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contact-right .font-md {
+        text-align: start;
+    }
+}
+
+
+/* -------------------------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    /* home section starts  */
+    section.home {
+        height: 130vh;
+    }
+
+    .font-md {
+        font-size: 13px;
+    }
+
+    .home-left .role-of-me {
+        font-size: 40px;
+        line-height: 2.4rem;
+    }
+
+    .home-left .name {
+        font-size: 24px;
+    }
+
+    .proffesional-profiles {
+        flex-direction: column;
+    }
+
+    .download-resume {
+        height: 3rem;
+        width: 13rem;
+    }
+
+    .home-right .img-wrapper {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .home-summary .grid.c-repeat-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-summary .details .item>h1 {
+        font-size: 38px;
+    }
+
+    .home-summary .counter {
+        width: 1.5rem;
+        height: 3.6rem;
+    }
+
+    .home-summary .details .item>span {
+        font-size: 14px;
+    }
+
+    .home-summary .details .item {
+        gap: 0.4rem;
+    }
+
+    /* home section ends  */
+
+    /* service section starts */
+    .h1 {
+        font-size: 28px;
+    }
+
+    section.services {
+        height: 121vh;
+    }
+
+    .use {
+        flex-direction: column;
+    }
+
+    .use.gap-3 {
+        gap: 0.1rem;
+    }
+
+    .font-sm {
+        font-size: 13px;
+    }
+
+    section.services .name {
+        font-size: 20px;
+    }
+
+    .services .services-body .item {
+        height: 10rem;
+    }
+
+    .focuser {
+        height: 10rem;
+    }
+
+    /* service section ends  */
+    section.recent-works {
+        height: 100vh;
+    }
+
+    .recent-head .recent-navs {
+        height: 3rem;
+        width: 17rem;
+    }
+
+    .recent-body {
+        height: 23rem;
+    }
+
+    .slider-container {
+        grid-auto-columns: 95%;
+        gap: 0.5rem;
+    }
+
+    .slider-container.r-repeat-2 {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .recent-body .item .work-details {
+        height: 5rem;
+    }
+
+    /* take this  */
+    .slider-item .item.p-3 {
+        padding: 1rem;
+    }
+
+    .known .font-xl {
+        font-size: 17px;
+    }
+
+    .recent-body .item:hover .work-details {
+        bottom: 1rem;
+    }
+
+    /* recent works section ends  */
+
+    /* resume section stars  */
+    section.resume {
+        height: 187vh;
+    }
+
+    section.resume .container {
+        gap: 2rem;
+
+    }
+
+    .experience-lists ul li .year {
+        font-size: 14px;
+    }
+
+    .experience-lists ul li .role {
+        font-size: 20px;
+    }
+
+    .experience-lists ul li {
+        height: 8rem;
+    }
+    /* resume section ends  */
+
+
+    /* skills section starts  */
+    section.skills {
+        height: 130vh;
+    }
+
+    .skills .skills-body .item .logo {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .skills .skills-body .item .logo img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        filter: saturate(0.2);
+    }
+
+    .logo.gap-2 {
+        gap: 0.8rem;
+    }
+
+    .logo.font-xl {
+        font-size: 20px;
+    }
+    /* skills section ends  */
+
+    /* contact section starts  */
+    section.contact {
+        height: 124vh;
+    }
+    section.contact .container {
+        flex-direction: column;
+        padding-inline: 2rem;
+        gap: 3rem;
+    }
+
+    section.contact .container.pt-10 {
+        padding-top: 4rem;
+    }
+
+    section.contact .container .w-half {
+        width: 100%;
+    }
+
+    section.contact .contact-left {
+        height: 30rem;
+    }
+
+    section.contact .contact-left.p-inline-3 {
+        padding-inline: 1rem;
+    }
+
+    section.contact .contact-left.gap-1 {
+        gap: 0.3rem;
+    }
+
+    input {
+        height: 2.7rem;
+    }
+    /* contact section ends  */
+
+    /* footer section starts  */
+    footer {
+        height: 30vh;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    footer .container.pt-10 {
+        padding-top: 1rem;
+    }
+    /* footer section ends  */
+
+     /* cicle scroll bar custom  */
+     .circle-wrapper {
+        right: 0.9rem;
+    }
+
+    .circle-container>span {
+        font-size: 20px;
+    }
+
+    .circle-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-right .font-md {
+        text-align: start;
+    }
 }
