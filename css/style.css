@@ -374,14 +374,6 @@ section.home .container::before {
   border-radius: 30px;
 }
 
-.home-text-anim h1 {
-  /* margin-left: 14rem; */
-  font-size: 20rem;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--accent-4);
-  text-stroke: 2px var(--accent-4);
-  animation: 3s pulsrate infinite alternate ease-in-out;
-}
 
 @keyframes pulsrate {
   0% {
@@ -484,16 +476,6 @@ section.services {
   background: var(--section-gradiant-2);
 }
 
-.services .services-head>h1 {
-  font-size: 54px;
-  background: var(--gradiant-2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  line-height: 5.5rem;
-}
-
 .services .service-h1 {
   transform: translateY(2rem);
   opacity: 0;
@@ -528,17 +510,13 @@ section.services {
 
 /* recent works section starts  */
 section.recent-works {
-  height: 240vh;
+  height: 255vh;
   background: var(--section-gradiant-1);
+  /* background-color: green; */
 }
 
 .recent-works .container {
   overflow: hidden;
-}
-
-.recent-works .recent-head h1 {
-  font-size: 54px;
-  opacity: 0;
 }
 
 .recent-head .recent-navs {
@@ -619,12 +597,9 @@ section.recent-works {
 
 /* resume section starts  */
 section.resume {
-  height: 140vh;
-  background: linear-gradient(180deg, var(--accent-9) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%);
-}
-
-.experience-head>h1 {
-  font-size: 54px;
+  height: 145vh;
+  /* background: linear-gradient(180deg, var(--accent-9) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 100%); */
+  background-color: blueviolet;
 }
 
 .experience-head>span {
@@ -658,12 +633,10 @@ section.resume {
 /* skills section start  */
 section.skills {
   height: 130vh;
-  background: var(--section-gradiant-1);
+  /* background: var(--section-gradiant-1); */
+  background-color: green;
 }
 
-.skills .skills-head>h1 {
-  font-size: 54px;
-}
 
 .skills .skills-body {
   flex-wrap: wrap;
@@ -701,17 +674,14 @@ section.skills {
 
 /* contact section starts  */
 section.contact {
-  height: 170vh;
-  background: var(--section-gradiant-2);
+  height: 140vh;
+  /* background: var(--section-gradiant-2); */
+  background-color: blueviolet;
 }
 
 section.contact .contact-left {
   height: 50rem;
   background-color: var(--accent-7);
-}
-
-.contact-left h1 {
-  font-size: 54px;
 }
 
 textarea,

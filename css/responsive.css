@@ -1,626 +1,128 @@
-@media (max-width:1191px) {
-    body::-webkit-scrollbar {
+@media screen and (max-width:992px) {
+
+    /* header section  */
+
+    .animated-header {
         display: none;
-    }
-
-    body {
-        width: 100%;
-    }
-
-    section {
-        width: 100%;
-    }
-
-    .p-inline-6 {
-        padding-inline: 2rem;
-    }
-
-    .font-md {
-        font-size: 18px;
-    }
-
-    .font-sm {
-        font-size: 15px;
-    }
-
-    header {
-        display: none;
-    }
-
-    /* home section  */
-    .home-summary .details .item>h1 {
-        font-size: 56px;
-    }
-
-    section#home {
-        padding-top: 1rem;
-        height: 110vh;
-    }
-
-    .home-summary .details .item>span {
-        font-size: 12px;
-    }
-
-    .home-left .name {
-        font-size: 25px;
-    }
-
-    .home-left .decription {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    section#home .home-wrapper {
-        flex-direction: column;
-    }
-
-    .role-of-me {
-        text-align: center;
-        font-size: 60px;
-    }
-
-    .home-left {
-        width: 100%;
-        align-items: center;
-    }
-
-    .home-right {
-        display: none;
-        width: 100%;
-    }
-
-    .home-text-anim {
-        display: none;
-    }
-
-    .home-right .img-wrapper {
-        transform: translate(0);
-    }
-
-    .home-summary {
-        margin-top: 3rem;
-    }
-
-    .home-summary .details {
-        padding-right: 5rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .home-summary .details .item {
-        gap: 0.5rem;
-    }
-
-    .home-summary .counter {
-        height: 5rem;
-        width: 2.5rem;
-    }
-
-    .name {
-        font-size: 23px;
-    }
-
-    /* service section  */
-    section.services {
-        height: 130vh;
-    }
-
-    .use {
-        flex-direction: column;
-        gap: 0.2rem;
-    }
-
-    .h1 {
-        font-size: 35px;
-    }
-
-    .services .services-head>h1 {
-        font-size: 35px;
-    }
-
-    /* recent works section  */
-    section.recent-works {
-        height: 260vh;
-    }
-
-    .all {
-        padding-inline: 4rem;
-    }
-
-    .recent-works .pt-7 {
-        padding-top: 0;
-    }
-
-    .recent-works .recent-head h1 {
-        font-size: 35px;
-    }
-
-    .recent-works .container {
-        padding-inline: 0;
-    }
-
-    .all-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .recent-body {
-        height: 98rem;
-    }
-
-    @keyframes recentAnim {
-        0% {
-            height: 0;
-            width: 0%;
-        }
-
-        100% {
-            height: 30rem;
-            width: 100%;
-        }
-    }
-
-    /* section resume  */
-    section.resume {
-        height: 250vh;
-    }
-
-    .experience-head>h1 {
-        font-size: 35px;
-    }
-
-    .resume .contaienr {
-        flex-direction: column;
-    }
-
-    .resume .contaienr .experience {
-        width: 100%;
-    }
-
-    .resume .contaienr .experience:nth-child(2) {
-        margin-top: 2rem;
-    }
-
-    .resume .contaienr .experience .experience-head {
-        justify-content: center;
-    }
-
-    .experience .experience-head h1 {
-        font-size: 35px;
-    }
-
-    .experience-lists ul li .role {
-        font-size: 27px;
-    }
-
-
-
-    /* section skills  */
-
-    section.skills {
-        height: 140vh !important;
-    }
-
-    .skills .skills-head>h1 {
-        font-size: 35px;
-    }
-
-    /* contact section  */
-
-    section.contact .container {
-        flex-direction: column;
-    }
-
-    .contact .container .contact-left {
-        width: 100%;
-    }
-
-    .contact .container .contact-right {
-        width: 100%;
-    }
-
-    .contact-left.p-inline-3 {
-        padding-inline: 2rem;
-    }
-
-
-    .contact-left h1 {
-        font-size: 35px;
-    }
-
-    .contact-left p {
-        text-align: center;
-    }
-
-    input {
-        height: 3rem;
-    }
-
-    section.contact .contact-left {
-        height: 40rem;
-    }
-
-    textarea {
-        height: 6.5rem;
-    }
-
-    input[type="submit"] {
-        margin-top: 2rem;
-    }
-
-    section.contact .contact-right {
-        margin-top: 4rem;
-    }
-}
-
-
-
-@media (max-width:850px) {
-
-    section#home {
-        height: 110vh !important;
-    }
-
-    section.services {
-        height: 130vh !important;
-    }
-
-    section.recent-works {
-        height: 260vh !important;
-    }
-
-    section.resume {
-        height: 250vh;
-    }
-
-    section.skills {
-        height: 190vh !important;
-        /* background-color: blue; */
-    }
-
-    .recent-head .recent-navs {
-        width: 24rem;
-    }
-}
-
-/* hi  */
-
-@media (max-width:480px) {
-    *::-webkit-scrollbar {
-        display: none;
-    }
-
-    .container {
-        overflow-x: hidden;
-    }
-
-    header {
-        display: flex;
-        height: 4rem;
-    }
-
-    @keyframes headerIn {
-        0% {
-            height: 0;
-        }
-
-        100% {
-            height: 5rem;
-        }
     }
 
     header#header {
         height: 5rem;
     }
 
-    .header img {
-        width: 6rem;
+    .p-inline-6 {
+        padding-inline: 3rem;
     }
 
-    .header .navigations ul {
+    .logo img {
+        width: 5rem;
+    }
+
+    .hire-btn {
         display: none;
     }
 
-    .header button {
+    .navigations {
+        display: none;
+    }
+    
+    header#header span {
+        display: flex;
+        font-size: 40px;
+    }
+
+    /* home section starts  */
+    section.home {
+        height: 140vh;
+    }
+
+    section.home .container {
+        padding-top: 7rem;
+    }
+
+    .home-wrapper {
+        gap: 3rem;
+    }
+
+    .home-text-anim  {
         display: none;
     }
 
-    body {
+    .home-wrapper {
+        flex-direction: column;
+    }
+
+    .home-wrapper .w-half {
         width: 100%;
     }
 
-    section {
-        width: 100%;
-        overflow-x: hidden;
+    .home-left.j-center  {
+        align-items: center;
+    }
+
+    .home-left .role-of-me {
+        font-size: 55px;
+        line-height: 3.3rem;
+        text-align: center;
+        /* note this  */
+    }
+
+    .font-md {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .home-right .img-wrapper {
+        width: 20rem;
+        height: 20rem;
+        transform: rotate(0);
+    }
+
+    .home-summary .details .item>h1 {
+        font-size: 46px;
+    }
+
+    .home-summary .counter {
+        width: 1.8rem;
+        height: 4rem;
+    }
+
+    .home-summary .details .item>span {
+        font-size: 14px;
+    }
+
+    .home-summary .gap-3 {
+        gap: 0.5rem;
     }
 
     .font-sm {
         font-size: 14px;
     }
 
-    /* .social {
-        margin-top: 3rem;
-    } */
-
-    .home .decription.font-md {
-        font-size: 14px;
-    }
-
-    .all {
-        padding-inline: 2rem;
-    }
-
-    .role-of-me {
-        font-size: 40px;
-        line-height: 3rem;
-    }
-
-    .download-resume {
-        width: 10rem;
-        height: 3rem;
-    }
-
-    .gap-2 {
-        gap: 1rem;
-    }
-
-    .home-summary .details .item {
-        padding-right: 1rem;
-        gap: 0.3rem;
-    }
-
-    .home-summary {
-        margin-top: -2rem;
-    }
-
-    .home-summary .details {
-        padding-right: 0;
-    }
-
-    .home-summary .details .item>h1 {
-        font-size: 36px;
-    }
-
-    .home-summary .counter {
-        width: 1.5rem;
-        height: 3.45rem;
-    }
-
-    /* hi  */
-    section#home {
-        height: 140vh !important;
-    }
-
-    section#home .container {
-        overflow: hidden;
-    }
-
-    .resume .contaienr {
-        overflow: hidden;
-    }
-
-    .services .container.pt-9 {
-        padding-top: 0rem;
-    }
-
-    .resume .contaienr.pt-8 {
-        padding-top: 1rem;
-    }
-
-    .skills .container {
-        overflow: hidden;
-        padding-top: 2rem;
-    }
-
-    .skills .container.pt-6 {
-        padding-top: 2rem;
-    }
-
-    .recent-works .container.pt-7 {
-        padding-top: 0;
-    }
-
-    section#service .container {
-        overflow: hidden;
-    }
-
-    .recent-works .container {
-        overflow: hidden;
-        /* background-color: rgb(164, 95, 95); */
-    }
-
-    .recent-works .container .recent-head {
-        padding-top: 0;
-        margin-top: -2rem;
-    }
-
-    .recent-works .container.pt-7 {
-        padding-top: 2rem;
-    }
-
-    .recent-body,
-    .recent-body .all,
-    .recent-body .ux.ui {
-        overflow: hidden;
-    }
-
-    .anim-header img {
-        width: 6rem;
-    }
-
     section.services {
-        height: 156vh !important;
+        height: 105vh;
     }
 
-    section.recent-works {
-        height: 250vh !important;
+    section.services .container.pt-9 {
+        padding-top: 4rem;
     }
 
-    .circle-container {
-        width: 40px;
-        height: 40px;
-      }
-      
-      .circle {
-        width: 40px;
-        height: 40px;
-      }
-
-      .circle-container>span {
-        font-size: 20px;
-      }
-
-      .circle-wrapper {
-        position: fixed;
-        bottom: -1rem;
-        right: 1rem;
-        opacity: 0;
-      }
-      
-
-    section.resume {
-        height: 215vh;
+    section.services .name {
+        font-size: 25px;
     }
 
-    section.skills {
-        height: 340vh !important;
-        /* background-color: blue; */
-    }
-
-    .recent-head .recent-navs {
-        width: 20rem;
+    .gap-3 {
+        gap: 1.5rem;
     }
 
     .h1 {
-        font-size: 27px;
-    }
-
-    section.contact .container{
-        padding-top: 3.5rem;
-    }
-
-    .services .services-head>h1 {
-        font-size: 27px;
-    }
-
-    .recent-works .recent-head h1 {
-        font-size: 27px;
-    }
-
-    .experience .experience-head h1 {
-        font-size: 27px;
-    }
-
-    .skills .skills-head>h1 {
-        font-size: 27px;
-    }
-
-    .contact-left h1 {
-        font-size: 27px;
-    }
-
-    .contact-right {
-        padding-inline: 1rem;
-    }
-
-    .font-md {
-        font-size: 15px;
-    }
-
-    .experience-lists ul li .year {
-        font-size: 17px;
-    }
-
-    .experience-lists ul li .role {
-        font-size: 24px;
-    }
-
-    .recent-body {
-        height: 90rem;
-    }
-
-    @keyframes recentAnim {
-        0% {
-            height: 0;
-            width: 0%;
-        }
-
-        100% {
-            height: 20rem;
-            width: 100%;
-        }
-
-    }
-
-    .experience.gap-3 {
-        gap: 1rem;
-    }
-
-    .services .services-body .item {
-        height: 13rem;
-    }
-
-    .focuser {
-        height: 13rem;
-    }
-
-    .home-left p.name {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .experience-head>span {
-        font-size: 34px;
-    }
-
-    .experience-head.gap-1 {
-        gap: 0.2rem;
-    }
-
-    .home-right {
-        display: flex;
-        width: 100%;
-        margin-top: -4rem;
-    }
-
-    .home-right .img-wrapper {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    footer p {
-        text-align: center;
-    }
-
-    .services .services-body .link {
-        position: absolute;
-        right: 1rem;
-        top: 2.6rem;
+        font-size: 45px;
     }
 
     .services .services-body .link span {
         font-size: 30px;
     }
+    /* service section ends  */
 
-    /* section.home {
-        background-color: rgb(229, 133, 133);
-    }
-
-    section.services {
-        background: green;
-    }
-
-    section.recent-works {
-        background: rgb(148, 148, 64);
-    }
-
-    section.resume {
-        background: rgb(107, 107, 46);
-    }
-
-    section.skills {
-        background: rgb(95, 43, 95);
-    }
-
-    section.contact {
-        background: rgb(32, 32, 131);
-    } */
+    
 }
