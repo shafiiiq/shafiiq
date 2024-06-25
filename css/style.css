@@ -162,7 +162,7 @@ header.animated-header {
   overflow: hidden;
 }
 
-.menu-btn {
+.header > span {
   display: none;
 }
 

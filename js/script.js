@@ -113,13 +113,13 @@ window.addEventListener('scroll', function () {
                 focuser.style.transform = "translateY(30rem)";
             }
         } else {
-            if (scrollY < 787 || scrollY > 1500) {
+            if (scrollY < 787 || scrollY > 2000) {
                 focuser.style.transform = "translateY(0)";
-            } else if (scrollY > 877 && scrollY < 1000) {
+            } else if (scrollY > 100 && scrollY < 1400) {
                 focuser.style.transform = "translateY(8rem)";
-            } else if (scrollY > 1000 && scrollY < 1400) {
+            } else if (scrollY > 1400 && scrollY < 1900) {
                 focuser.style.transform = "translateY(16rem)";
-            } else if (scrollY > 1400) {
+            } else if (scrollY > 1900) {
                 focuser.style.transform = "translateY(24rem)";
             }
         }
